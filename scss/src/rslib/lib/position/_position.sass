@@ -1,0 +1,70 @@
+//onepager updated 16/12/2015
+[class*="rs-pos-"]
+	position: absolute
+	z-index: 10
+
+[class*="rs-pos-t"]
+	top: 0
+	
+.rs-pos-tc
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+
+
+.rs-pos-tl
+	left: 0
+
+.rs-pos-tr
+	right: 0
+
+[class*="rs-pos-b"]
+	bottom: 0
+
+.rs-pos-bl
+	left: 0
+
+.rs-pos-br
+	right: 0
+
+.rs-pos-bc
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+
+[class*="rs-pos-m"]
+	-webkit-transform: translateY(-50%)
+	-moz-transform: translateY(-50%)
+	transform: translateY(-50%)
+	top: 50%
+
+.rs-pos-mr
+	right: 0
+
+.rs-pos-ml
+	left: 0
+	
+.rs-pos-mc
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+
+.rs-pos-fixed
+	position: fixed
+	width: inherit
+	z-index: 21
+
+.rs-pos-rel
+	position: relative
+
+	
+@media #{$small_only}	
+	.rs-pos-stat-so
+		position: static
+
+@media #{$medium_only}	
+	.rs-pos-stat-mo
+		position: static

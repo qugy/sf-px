@@ -1,0 +1,58 @@
+//!
+//  Font Awesome 3.1.0
+// *  the iconic font designed for Bootstrap
+// *  -------------------------------------------------------
+// *  The full suite of pictographic icons, examples, and documentation
+// *  can be found at: http://fontawesome.io
+// *
+// *  License
+// *  -------------------------------------------------------
+ // *  - The Font Awesome font is licensed under the SIL Open Font License v1.1 -
+ // *    http://scripts.sil.org/OFL
+ // *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ // *    http://opensource.org/licenses/mit-license.html
+ // *  - Font Awesome documentation licensed under CC BY 3.0 License -
+ // *    http://creativecommons.org/licenses/by/3.0/
+ // *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ // *    "Font Awesome by Dave Gandy - http://fontawesome.io"
+
+ // *  Contact
+ // *  -------------------------------------------------------
+ // *  Email: dave@fontawesome.io
+ // *  Twitter: http://twitter.com/fortaweso_me
+ // *  Work: Lead Product Designer @ http://kyruus.com
+ // */
+
+@import "AwesomePartials/variables.sass"
+@import "AwesomePartials/mixins.sass"
+@import "AwesomePartials/path.sass"
+
+//.cm-pb
+@import "AwesomePartials/core.sass"
+@import "AwesomePartials/bootstrap.sass"
+@import "AwesomePartials/extras.sass"
+
+//.cm-pb
+body
+	.icons-ul
+		margin-left: 1.4em  //1.8em //$icons-li-width
+		.icon-li
+			left: -2.1em//-$icons-li-width   with 1.7 em will touch
+			//width: 3.0em
+	.icons-separator-ul .icon-li
+		left: -1.8em
+	[class^="icon-"],
+	[class*=" icon-"]
+		line-height: inherit
+
+	.icon-lh
+		line-height: 1
+	.icon-stack-content
+		top: 25%
+
+@media #{$medium_down}
+
+	.rs-icon-touch
+		padding: 1rem
+		font-size: 1.6rem
+		line-height: 2rem

@@ -1,0 +1,185 @@
+header
+	&.rs-header
+		.rs-header-tlc
+			background-color: $color_pt1
+			a
+				display: block
+				padding: 1rem
+				color: $color_c2
+				vertical-align: middle
+				i
+					display: none
+			ul
+				padding: 0 0 1rem 
+				margin: 0
+			li
+				float: left
+				padding: 0
+				background-color: $color_pp1
+				list-style: none
+				margin: 0 1rem 1rem 0
+				&:last-child
+					margin-right: 0
+				a
+					position: relative
+					&:hover
+						background-color: $color_pp2
+					&.rs-selected
+						background: $color_pp2
+					&.rs-expanded
+						background: $color_pp2
+						&:after
+							pointer-events: none
+							z-index: 999
+							height: 0
+							width: 0
+							border: 1px solid transparent
+							content: ""
+							position: absolute
+							top: 100%
+							left: 50%
+							border-color: transparent
+							border-width: 1.2rem 1rem 0
+							border-top-color: $color_pp2
+							margin-left: -1.2rem
+
+				ul.rs-header-tlc-sublist
+					position: absolute
+					background: $color_pt1
+					padding: 2rem 1rem
+					display: none
+					left: 1rem
+					right: 1rem
+					border-bottom: 5px solid $color_pp1
+					li
+						background: $color_pt1
+						margin: 0
+						padding: 0 1rem
+						a
+							font-size: 1.8rem
+							line-height: 2.2rem
+							color: $color_pp1
+							padding: 0 0 0.5rem
+							font-family: ProximusBold,Verdana,Helvetica,sans-serif
+							&:hover
+								color: $color_pp2
+								background: $color_pt1
+						ul
+							li
+								padding: 0
+								margin: 0
+								float: none
+								a
+									font-family: $font_PxReg
+									font-size: 1.6rem
+									line-height: 2rem
+									color: $color_c1
+									padding: 0 0 0.5rem
+									&:hover
+										text-decoration: underline
+										color: $color_c1
+
+						
+
+			.rs-header-tlc-title
+				font-size: 2.4rem
+				line-height: 2.8rem
+				font-family: ProximusBold,Verdana,Helvetica,sans-serif
+				color: $color_pp1
+				padding-bottom: 2rem
+			.rs-header-tlc-list-link
+				display: none
+				
+				
+				
+				
+/*@media #{$small_only}*/
+@media only screen and (max-width: 1280px) // was 900px //!!!!!!!! commented for new media query 09/02/2016
+	header
+		&.rs-header
+			.rs-header-tlc
+				/*padding-top: 9.5rem*/
+				a
+
+					i
+						display: block
+						float: right
+
+				ul
+					position: absolute
+					width: 100%
+					margin: -2rem -1rem 0
+					padding: 0 1rem 2rem
+					background-color: $color_pt1
+					z-index: 20
+					display: none
+				li
+					float: none
+					margin: 0
+
+
+					a
+						border-bottom: 1px solid $color_c2
+						&.rs-expanded
+							i
+								-ms-transform: rotate(90deg) /* IE 9 */
+								-webkit-transform: rotate(90deg) /* Chrome, Safari, Opera */
+								transform: rotate(90deg)
+						&.rs-expanded:after
+							display: none
+		
+					ul.rs-header-tlc-sublist
+						position: static
+						padding: 0
+						margin: 0
+						li
+							padding: 0
+							display: block
+							width: 100%
+							a
+								background: $color_pt1
+								color: $color_c1
+								padding: 1rem
+								font-size: 1.4rem
+								line-height: 1.8rem
+								display: block
+								font-family: $font_PxBold
+								border-bottom: 1px solid $color_pt2
+								&:hover
+									color: $color_c1
+									background: $color_pt1
+								&.rs-expanded
+									color: $color_pp2
+							ul
+								position: static
+								padding: 0
+								margin: 0
+								li
+									a
+										padding: 1rem 1rem 1rem 2rem
+										font-size: 1.4rem
+										line-height: 1.8rem
+										font-family: $font_PxReg
+
+
+
+
+
+
+
+
+				.rs-header-tlc-list-link
+					display: block
+					background-color: $color_pp1
+					border-bottom: 1px solid $color_c2
+					font-family: ProximusBold,Verdana,Helvetica,sans-serif
+					margin-bottom: 2rem
+					&.rs-expanded
+						background-color: $color_pp2
+						i
+							-ms-transform: rotate(90deg) /* IE 9 */
+							-webkit-transform: rotate(90deg) /* Chrome, Safari, Opera */
+							transform: rotate(90deg)
+					&:hover
+						background-color: $color_pp2
+				

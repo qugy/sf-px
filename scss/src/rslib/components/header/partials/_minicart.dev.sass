@@ -1,0 +1,105 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-minicart
+			position: absolute
+			z-index: 10
+			padding: 0 0 1rem 0
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.11), 0 2px 3px rgba(0, 0, 0, 0.22)
+			text-align: left
+			a
+				color: $color_link
+				&:hover
+					color: $color_pp2
+			.rs-btn
+				color: $color_c2
+				&:hover
+					color: $color_c2
+
+			h4
+				+mxGradient3(h, $color_pp1, 48%, #702C85, 71%, $gradient_s8, 100%)
+				color: $color_c2
+				text-align: center
+			.rs-minicart-box-content
+				overflow: auto
+				clear: both
+				margin-bottom: 2rem
+			.rs-minicart-box
+				background: $color_c2
+				border: none
+				padding: 2rem 2rem 0
+				.rs-minicart-box-item
+					background: $color_pt1
+					padding: 2rem 2rem 0
+					margin-bottom: 1rem
+					a
+						text-decoration: underline
+				.rs-minicart-box-item:last-child
+					margin-bottom: 0
+
+
+
+
+// media queries zone
+//order has to be kept
+@media #{$small_only}
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-minicart
+			top: 5.1rem
+			right: 2rem
+			width: calc(100vw - 4rem)
+			h4
+				padding: 1rem
+			.rs-minicart-total
+				font-size: $txt_s6_s
+				line-height: $txt_s6_lh_s 
+			.rs-minicart-box
+				padding: 2rem 1rem 0
+			.rs-minicart-box-content
+				max-height: 20rem
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-minicart
+				top: 6.3rem
+				right: 2rem
+				width: auto
+				h4
+					padding: 2rem
+				.rs-minicart-box-content
+					max-height: 30rem
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-minicart
+				top: 8.6rem
+
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

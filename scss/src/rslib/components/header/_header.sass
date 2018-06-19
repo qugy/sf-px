@@ -1,0 +1,98 @@
+
+
+
+
+//developped as mobile up !!!
+header
+	&.rs-header
+		font-size: $header_font_size_small
+		line-height: $header_font_size_small + $txt_lineHeight_diff
+		background: $header_bg
+		z-index: 100
+		position: relative
+		ul,ol
+			font-size: $header_font_size_small
+			line-height: $header_font_size_small + $txt_lineHeight_diff
+		a:link,a:visited,a:active
+			text-decoration: none
+		.rs-header-topbar
+			background: rgba(0, 0, 0, 0) linear-gradient(to right, #5c2d91 48%, #494aa4 71%, #00bcee 100%) repeat scroll 0 0
+			color: white
+			min-height: 4.4em
+			//display: none
+			position: fixed
+			top: 0
+			z-index: 100
+			.rs-last
+				display: block
+
+			.f-dropdown
+				margin-top: 0
+				li
+					font-size: $header_font_size_small
+					line-height: $header_font_size_small + $txt_lineHeight_diff
+					a
+						padding: 1.2em 1em
+					&:hover
+						background: $color_pp2
+					&:focus
+						background: $color_pp2
+//!!!!!!!! commented for new media query 09/02/2016
+// @media #{$medium_up}
+// 	header
+// 		&.rs-header
+// 			font-size: $header_font_size_medium
+// 			line-height: $header_font_size_medium + $txt_lineHeight_diff
+// 			ul,ol
+// 				font-size: $header_font_size_medium
+// 				line-height: $header_font_size_medium + $txt_lineHeight_diff
+// 			.rs-header-topbar
+// 				.f-dropdown
+// 					li
+// 						font-size: $header_font_size_medium
+// 						line-height: $header_font_size_medium + $txt_lineHeight_diff
+@media only screen and (max-width: 1280px)
+	header
+		&.rs-header
+			padding-top: 9.5em
+			.rs-header-topbar,.rs-header-logobar,.rs-header-mdd .rs-header-mdd-wrapper
+				>.row
+					max-width: 100vw
+
+
+@media only screen and (min-width: 1281px) // was @media #{$large_up} //!!!!!!!! commented for new media query 09/02/2016
+	header
+		&.rs-header
+			font-size: $header_font_size_large
+			line-height: $header_font_size_large + $txt_lineHeight_diff
+			ul,ol
+				font-size: $header_font_size_large
+				line-height: $header_font_size_large + $txt_lineHeight_diff
+			.rs-header-topbar
+				display: block
+				position: static
+				.f-dropdown
+					margin-top: -1px
+					li
+						font-size: $header_font_size_medium
+						line-height: $header_font_size_medium + $txt_lineHeight_diff
+				li
+					a
+						font-size: $header_font_size_medium
+						line-height: $header_font_size_medium + $txt_lineHeight_diff
+
+
+
+
+@import partials/segments
+//the links on top left when no segments
+@import partials/topExtraList
+@import partials/topList
+@import partials/accountSelector
+@import partials/lang
+@import partials/logobar
+@import partials/minicart
+@import partials/mdd
+@import partials/tlc
+@import partials/transparency
+

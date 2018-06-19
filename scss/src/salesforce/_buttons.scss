@@ -1,0 +1,57 @@
+html body {
+    li.slds-button--brand, li.slds-button--neutral {
+        border: none;
+        border-radius: 0 !important;
+        &:hover, &:focus, &:active {
+            background: none;
+            box-shadow: none;
+        }
+    }
+    .slds-button--brand, button.slds-button--neutral, li.slds-button--neutral a {
+        overflow: hidden;
+        background-color: $color_pp1;
+        border-radius: 0 0 (1*$ratio)*1rem;
+        color: $color_c2 !important;
+        display: inline-block;
+        font-family: $fontNormal;
+        font-size: $fontBaseSize;
+        line-height: $fontBaseLineHeight;
+        padding: $spacing1 $spacingDefault;
+        border: 1px solid $color_pp1;
+        font-kerning: none;
+        text-align: center;
+        vertical-align: middle;
+        @include transition(background-color .3s);
+        margin: 0 $spacing1 $spacing1 0;
+        transform: translateZ(0);
+        white-space: nowrap;
+        &:hover, &:focus, &:active {
+            background-color: $color_pp2 !important;
+            border-color: $color_pp2;
+        }
+    }
+    .branding-actions {
+        .slds-button--brand, li.slds-button--neutral a {
+            margin: 0 0 $spacing1 $spacing1;
+        }
+    }
+    .slds-button_icon, .slds-button--icon, .slds-button--icon-border-filled, .forceListViewManagerHeader .inlineEditTooltipButton button {
+        background-color: $color_pt1;
+        border-radius: 0 0 (1*$ratio)*1rem !important;
+        color: $color_pp1;
+    }
+
+    .cNotifications .slds-button {
+        background-color: transparent;
+    }
+
+    .slds-is-selected:hover {
+        color: $color_c2 !important;
+    }
+    .slds-type-focus {
+        &:hover,&:focus {
+            color: $color_pp2 !important;
+            border-bottom: none;
+        }
+    }
+}

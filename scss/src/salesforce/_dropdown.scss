@@ -1,0 +1,47 @@
+html body {
+  .forceVirtualAutocompleteMenuList {
+    margin-top: 0;
+  }
+  .onePanelManager .uiPanel.open.active {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .slds-dropdown__header {
+   background: $color_pp1;
+   color: $color_c2;
+   font-family: $fontBold;
+   font-size: $fontBaseSize;
+   line-height: $fontBaseLineHeight;
+    .slds-text-title--caps {
+      color: $color_c2;
+    }
+  }
+  .slds-dropdown__item>a {
+    font-size: $fontBaseSize;
+    line-height: $fontBaseLineHeight;
+    color: $color_pp1;
+    &:hover, &:focus {
+      background: $color_pp2;
+      color: $color_c2;
+    }
+  }
+  .forceVirtualAutocompleteMenu input.uiInputTextForAutocomplete {
+    margin-bottom: 0.75rem;
+  }
+  .forceVirtualAutocompleteMenuOption {
+    &.slds-dropdown__item.slds-is-selected {
+      .slds-icon--selected {
+        color: $color_pp1;
+      }
+      &>a:hover, &>a:focus {
+        .slds-icon--selected {
+          color: $color_c2;
+        }
+      }
+    }
+    &.highlighted a, &.highlighted a .slds-icon--selected {
+      background: $color_pp2;
+      color: $color_c2;
+    }
+  }
+}

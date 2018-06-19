@@ -1,0 +1,50 @@
+html .siteforceServiceBody {
+    .cHeaderPanel {
+        background: $color_c2;
+        margin-bottom: (1*$ratio)*1rem;
+        .cHeaderOverlay {
+            background: none;
+        }
+        .cBrandingProfile {
+            display: none;
+        }
+    }
+    .cNotifications .unsNotificationsCounter {
+        color: $color_pp1;
+    }
+    .selfServiceProfileMenuTrigger a {
+        text-shadow: none;
+        color: $color_pp1;
+    }
+    input.search-field {
+        margin-bottom: 0;
+    }
+    .profileIcon {
+        margin-bottom: 0;
+    }
+    .forceCommunityHeadline {
+        .headlineTitle {
+            font-family: $font_PxBold;
+            padding-bottom: (4*$ratio)*1rem;
+            color: $color_pp1;
+            font-size: (4*$ratio)*1rem;
+            line-height: (4.6*$ratio)*1rem;
+            text-align: center;
+        }
+        .headlineInfo {
+            font-family: $font_PxLight;
+            padding-bottom: (4*$ratio)*1rem;
+            color: $color_c1;
+            font-size: (2.6*$ratio)*1rem;
+            line-height: (3.2*$ratio)*1rem;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    html .siteforceServiceBody .cHeaderLine {
+        padding-bottom: (12*$ratio)*1rem;
+    }
+}

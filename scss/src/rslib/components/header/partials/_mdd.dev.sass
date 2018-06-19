@@ -1,0 +1,316 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-header-mdd
+			background: $color_c2
+			position: absolute
+			z-index: 60
+			width: 100%
+			display: none
+
+		.rs-header-mdd-wrapper
+			position: static
+			background: $color_c2
+			ul
+				margin: 0
+				padding: 0
+			li
+				display: block
+				padding: 0
+			a,.rs-header-mdd-home-small
+				padding: 1rem
+				display: block
+				color: $color_c1
+				border-bottom: 1px solid $color_pt8
+				margin: 0 -1rem
+			.rs-header-mdd-home-small
+				border-top: 1px solid $color_pt8
+
+			a
+				white-space: normal
+				i
+					color: $color_pp1
+					padding-right: 1rem
+				.icon-Arrow
+					float: right
+					margin-top: 2px
+					padding-right: 0
+		.rs-header-mdd-tep-list
+			.rs-header-mdd-panel
+				//display: none
+				position: absolute
+				transform: translateX(-100%)
+				width: 100%
+				top: 8rem
+				left: 0
+				background-color: $color_c2
+				-moz-transition: ease .5s
+				-o-transition: ease .5s
+				-webkit-transition: ease .5s
+				transition: ease .5s
+				margin: 0
+				&.rs-expanded
+					//display: block
+					-moz-transform: translateX(0)
+					-ms-transform: translateX(0)
+					-webkit-transform: translateX(0)
+					transform: translateX(0)
+					-moz-transition: ease .5s
+					-o-transition: ease .5s
+					-webkit-transition: ease .5s
+					transition: ease .5s
+					.rs-header-mdd-cat-list
+						display: block
+					.rs-header-mdd-panel-title
+						color: $color_pp1
+						font-size: 1.6rem
+						line-height: 1.6rem + $txt_lineHeight_diff
+						font-family: $font_PxBold
+						text-transform: uppercase
+						i
+							color: $color_pp1
+							-ms-transform: rotate(180deg) /* IE 9 */
+							-webkit-transform: rotate(180deg) /* Chrome, Safari, Opera */
+							transform: rotate(180deg)
+							padding-left: 0.7rem
+							float: left
+							margin-top: 0.1rem
+			.rs-header-mdd-panel-desc
+				font-size: 1.2rem
+				line-height: 1.2rem + $txt_lineHeight_diff
+				padding: 0
+				font-family: $font_PxReg
+				color: $color_pt3
+			.rs-header-mdd-cat
+				&.rs-expanded
+					.rs-header-mdd-panel
+						display: block
+
+
+		.rs-header-mdd-panel
+			background: $color_c2
+			margin: 0
+			a
+				margin: 0
+		.rs-selected,.rs-child-selected
+			>a
+				color: $color_pp2
+				>i
+					color: $color_pp2
+
+		.rs-header-mdd-quicklist
+			.rs-header-mdd-quicklist-promo
+				color: $color_promo
+				i
+					color: $color_promo
+
+
+		.rs-header-mdd-contact,.rs-header-mdd-webmail,.rs-header-mdd-quicklist
+			a
+				background: $color_pt8
+				border-bottom: 1px solid $color_c2
+				color: $color_pp1
+				i
+					float: left
+		.rs-header-mdd-close-small
+			float: right
+			background-color: $color_c2
+			color: $color_pp1
+			padding: 2rem 1rem
+			font-size: 1.2rem
+			text-transform: uppercase
+			i
+				padding-right: 1rem
+				float: left
+		.rs-header-mdd-cat-title-icon
+			&:before
+				font-size: 1.33333em
+				vertical-align: -9%
+.touch
+	header
+		&.rs-header181
+			.rs-header-mdd-wrapper
+				a
+					&:hover
+						color: $color_c1
+						i
+							color: $color_pp1
+				.rs-header-mdd-tep
+					display: block
+// media queries zone
+//order has to be kept
+@media #{$small_only}
+	header
+		&.rs-header181
+			.rs-header-mdd
+				height: 100vh
+				overflow-y: auto
+				overflow-x: hidden
+				width: calc(100vw - 4.5rem)
+				.rs-header-mdd-close,p,.rs-header-mdd-tep-direct
+					display: none
+
+			.rs-header-topbar + .rs-header-logobar + .rs-header-mdd
+				top: 3.9rem
+			&.rs-header-is-sticky
+				.rs-header-topbar + .rs-header-logobar + .rs-header-mdd
+					top: 0
+			.rs-header-mdd-panel
+				height: calc(100vh - 12rem) // 100vh - topbar (4rem) - as (8rem)
+			.rs-header-mdd-panel-as
+				height: calc(100vh - 4rem) // 100vh - topbar (4rem)
+			.rs-header-mdd-panel,.rs-header-mdd-panel-as
+				overflow-y: auto
+				overflow-x: hidden
+				.rs-header-mdd-panel
+					top: 0
+			.rs-header-mdd-cat-list
+				li
+					width: 100%
+			.rs-header-mdd-quicklist
+				a
+					padding-top: 1.2rem
+					padding-bottom: 1.1rem
+					i
+						margin-top: 2px
+//@media #{$small_up}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-header-mdd
+				-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+				-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+				box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+			.rs-header-mdd-wrapper
+				border-top: none
+				.rs-header-mdd-home-small,.rs-header-mdd-tep-list-small,.rs-header-mdd-contact,.rs-header-mdd-webmail, .rs-header-mdd-panel-title,.rs-header-mdd-tep-small-link,.rs-header-mdd-tep,.rs-header-mdd-tep-list,.rs-header-mdd-close-small,.rs-as-account,.rs-header-mdd-panel-as
+					display: none
+				.rs-header-mdd-list
+					padding-top: 2rem
+				.rs-header-mdd-tep
+					font-size: 2.4rem
+					line-height: 2.4rem + $txt_lineHeight_diff
+					font-family: $font_PxBold
+					color: $color_pp1
+					padding-bottom: 3rem
+					margin-right: 6rem
+			.rs-header-mdd-tep-small
+				display: none
+			.rs-header-mdd-close
+				display: block
+				position: absolute
+				padding: 2rem 0 2rem 2rem
+				border-bottom: none
+				cursor: pointer
+				right: 1rem
+				z-index: 1
+				i
+					color:  $color_pp1
+					font-size: 2rem
+				&:hover
+					i
+						color: $color_pp2
+			.rs-header-mdd-tep-list
+				a
+					border-bottom: none
+					.icon-Arrow
+						display: none
+				&.rs-header-mdd-active
+					display: block
+					.rs-header-mdd-panel
+						display: block
+						position: static
+						transform: translateX(0)
+					.rs-header-mdd-cat-list
+						.rs-header-mdd-cat-title
+							font-family: $font_PxBold
+							font-size: 2rem
+							line-height: 2rem + $txt_lineHeight_diff
+							padding: 0 0 1rem 0
+							color: $color_pp1
+							&:hover
+								color: $color_pp2
+						ul
+							display: block
+							padding: 0
+						a
+							padding: 0 2rem 0.7rem 0
+							font-family: $font_PxReg
+							&:hover
+								text-decoration: underline
+								color: $color_pp2
+								.rs-header-mdd-panel-desc
+									color: $color_pp2
+						.rs-header-mdd-cat
+							padding: 0 4rem 3.3rem 0
+							p
+								padding-bottom: 0
+					.rs-header-mdd-quicklist-bg
+						position: relative
+						background: $color_pt10
+						width: 100vw
+						margin-left: -50vw
+						left: 50%
+						height: 6rem
+					.rs-header-mdd-quicklist
+						position: absolute
+						padding: 1rem 0
+						bottom: 0.5rem
+						width: 100%
+						li
+							display: inline-block
+							padding-right: 6rem
+							a
+								background: none
+								padding: 0
+								line-height: 2.8rem
+								i
+									font-size: 2.4rem
+									padding-right: 1rem
+									display: inline-block
+									margin-top: -5px
+									float: none
+								&:hover
+									color: $color_pp2
+									text-decoration: underline
+									i
+										color: $color_pp2
+							&:last-child
+								padding-right: 0
+
+			.rs-header-mdd-panel-desc
+				display: inline-block
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-header-mdd-wrapper
+				.rs-header-mdd-list
+					padding-top: 4rem
+
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

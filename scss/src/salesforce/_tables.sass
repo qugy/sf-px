@@ -1,0 +1,86 @@
+.rs-table-title
+  padding: $spacing1 $spacing2
+  color: $color_c2
+  +mxGradient3(h, $gradient_g1_start, 48%, $gradient_g1_mid, 71%, $gradient_g1_end, 100%)
+  border-radius: $radius $radius 0 0
+
+//scrolling data table//
+.forceBaseListView table, table.slds-table
+  border-radius: $radius
+  &>thead>tr>th,&>tbody>tr>td,&>tbody>tr>th
+    border: 1px solid $color_c2
+    font-size: $txt_size_S
+    line-height: $txt_lineHeight_S
+    text-transform: none  // SALESFORCE OVERRIDE
+    background: transparent // SALESFORCE OVERRIDE
+
+  &>tbody>tr:nth-of-type(2n+1)
+    background-color: $color_p2 //-->NEW FROM BRANDING 7/06/2016 - #f7f4f9
+  &>tbody>tr:nth-of-type(2n)
+    background-color: $color_p1 //-->NEW FROM BRANDING 7/06/2016 - #eeeaf4
+
+  &>thead>tr>th,&>tbody>tr>th, .slds-cell-fixed
+    background-color: $color_pt6
+    vertical-align: top
+    color: $color_pp1
+    font-weight: normal
+
+  .slds-cell-fixed a
+    color: $color_pp1 !important
+    &:hover
+      color: $color_pp2 !important
+
+  &>tbody>tr:focus>td
+    background: inherit
+
+.forceBaseListView table
+  &>thead>tr>th,&>tbody>tr>td,&>tbody>tr>th
+    padding: $spacing1 !important // SALESFORCE OVERRIDE
+
+@media #{$medium_up}
+
+  .forceBaseListView table
+    &>thead>tr>th,&>tbody>tr>td,&>tbody>tr>th
+      font-size: $txt_size_M
+      line-height: $txt_lineHeight_M
+
+@media #{$large_up}
+
+  .forceBaseListView table
+    &>thead>tr>th,&>tbody>tr>td,&>tbody>tr>th
+      font-size: $txt_size_L
+      line-height: $txt_lineHeight_L
+
+/* SALESFORCE OVERRIDE */
+
+html body
+  .slds-table_header-fixed tbody tr:first-child td, .slds-table_header-fixed tbody tr:first-child th, .slds-table--header-fixed tbody tr:first-child td, .slds-table--header-fixed tbody tr:first-child th
+    border: 1px solid $color_c2
+
+  force-list-view-manager-status-info > div
+    margin-bottom: -1.25rem
+
+  .slds-th__action
+    &:focus, &:hover
+      background-color: transparent
+
+  .slds-table_edit, .slds-table--edit
+    &.slds-table tbody tr:hover
+      & > td.slds-cell-edit:hover
+        background-color: transparent
+      & > th.slds-cell-edit:hover
+        background-color: $color_pt6
+
+  .slds-table:not(.slds-no-row-hover) tbody
+    tr:hover, tr:focus
+      & > td
+        background-color: transparent
+      & > th
+        background-color: $color_pt6
+
+  .forceListViewManagerGrid
+    .slds-is-resizable .slds-cell-fixed, .slds-no-cell-focus .slds-has-focus.slds-is-resizable .slds-cell-fixed
+      border-left: 1px solid $color_c2
+      border-right: 1px solid $color_c2
+      &:hover
+        box-shadow: $color_pp1 -.25rem 0 0 inset

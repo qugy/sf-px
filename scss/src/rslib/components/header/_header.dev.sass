@@ -1,0 +1,154 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.rs-header-wrapper
+	position: relative
+	z-index: 100
+	background: $color_c2
+.rs-header-transparent
+	.rs-header-wrapper
+		background: transparent
+header
+	&.rs-header181
+		background: $header_bg
+		z-index: 100
+		position: relative
+		position: absolute
+		width: 100%
+		top: 0
+		transition: all .6s cubic-bezier(.165,.84,.44,1)
+		a
+			color: $color_pp1 
+			text-decoration: none
+			white-space: nowrap
+			display: block
+			&:link,
+			&:visited,
+			&:active
+				text-decoration: none
+			&:hover
+				color: $color_pp2
+		&.rs-header-neg
+			a
+				color: $color_c2
+				&:hover
+					color: $color_pp2
+		&.rs-header-is-hidden
+			transform: translateY(-100%)
+			transition-duration: .8s
+		&.rs-header-is-sticky
+			position: fixed
+			background: $color_c2
+			top: 0
+			transition: transform 1s cubic-bezier(.165,.84,.44,1)
+
+.touch
+	header
+		&.rs-header181
+			a
+				&:hover
+					color: $color_pp1
+			&.rs-header-neg
+				a
+					&:hover
+						color: $color_c2
+
+// media queries zone
+//order has to be kept
+@media #{$small_only}
+	header
+		&.rs-header181
+			.rs-header-topbar,.rs-header-logobar,.rs-header-mdd .rs-header-mdd-wrapper
+				>.row
+					max-width: 100vw
+
+//@media #{$small_up}
+.rs-header-spacer
+	height: 9.1em
+.rs-header-tlc-spacer
+	height: 17.1em
+header
+	&.rs-header181
+		font-size: $header_font_size_small
+		line-height: $header_font_size_small + $txt_lineHeight_diff
+		//ul,ol
+			//font-size: 1em //override foundation + rslib
+			//line-height: 1em
+.rs-header-wrapper
+	+ section,+ div
+		.rs-section-under-header
+			padding-top: 9.1em
+			margin-top: -9.1em
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	.rs-header-spacer
+		height: 10.4em
+	.rs-header-tlc-spacer
+		height: 18.3em
+	header
+		&.rs-header181
+			font-size: $header_font_size_medium
+			line-height: $header_font_size_medium + $txt_lineHeight_diff
+			//ul,ol
+				//font-size: $header_font_size_medium
+				//line-height: $header_font_size_medium + $txt_lineHeight_diff
+	.rs-header-wrapper
+		+ section,+ div
+			.rs-section-under-header
+				padding-top: 10.4em
+				margin-top: -10.4em
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	.rs-header-spacer
+		height: 12.8em
+	.rs-header-tlc-spacer
+		height: 21em
+	header
+		&.rs-header181
+			font-size: $header_font_size_large
+			line-height: $header_font_size_large + $txt_lineHeight_diff
+			//ul,ol
+				//font-size: $header_font_size_large
+				//line-height: $header_font_size_large + $txt_lineHeight_diff
+.rs-header-wrapper
+	position: relative
+	+ section,+ div
+		.rs-section-under-header
+			padding-top: 12.8em
+			margin-top: -12.8em
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}
+
+
+@import partials/topbar.dev
+@import partials/segments.dev
+@import partials/topExtraList.dev
+@import partials/topList.dev
+@import partials/search.dev
+@import partials/lang.dev
+@import partials/logobar.dev
+@import partials/accountSelector.dev
+@import partials/minicart.dev
+@import partials/notifMsg.dev
+@import partials/mdd.dev
+@import partials/tlc.dev

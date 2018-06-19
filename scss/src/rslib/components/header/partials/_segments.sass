@@ -1,0 +1,48 @@
+header
+	&.rs-header
+		.rs-header-topbar
+			.rs-segments
+				.rs-segment-noLink
+					display: table
+					padding: 2rem 0 2rem 1rem
+				.rs-segments-list
+					display: none
+
+@media only screen and (min-width: 1281px) // was @media #{$large_up} //!!!!!!!! commented for new media query 09/02/2016
+	header
+		&.rs-header
+			.rs-header-topbar
+				.rs-segments
+					.rs-segments-list
+						display: block
+						padding: 0
+						margin: 0
+						li
+							display: block //inline
+							float: left
+							//font-size: 16px
+							//line-height: 20px
+							color: white
+							padding: 0
+							a
+								color: white 
+								text-decoration: none
+								padding: 1.2rem 0 1.2rem 2rem
+								white-space: nowrap
+								display: block
+								&:after
+									content: ""
+									border-right: 1px solid rgba(255, 255, 255, .4)
+									//font-size: 1.8rem
+									padding-left: 2rem
+									font-size: 2rem
+								&:hover
+									background-color: $color_pp2
+							
+								
+							&.rs-segment-selected
+								a
+									background-color: $color_pp2
+							&:last-child
+								a:after
+									border-right: none

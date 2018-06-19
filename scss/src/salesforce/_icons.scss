@@ -1,0 +1,118 @@
+html body {
+
+  .icon-Information-box:before {
+    font-family: PxIcon;
+    content: "\e059";
+    font-style: normal;
+  }
+
+  .icon-Close:before {
+    font-family: PxIcon;
+    content: "\e925";
+    font-style: normal;
+  }
+
+  .icon-Arrow-navigation:before {
+    font-family: PxIcon;
+    content: "\e05e";
+    font-style: normal;
+  }
+
+  .forceEntityIcon {
+    background: $color_pp1 !important;
+  }
+
+  .slds-icon_container {
+    &.slds-icon-utility-notification {
+      &:before {
+        font-family: PxIcon;
+        font-size: 1.5rem;
+        content: "\e63d";
+      }
+      span {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .forceListViewSettingsMenu .slds-button span:first-child {
+    &:before {
+      font-family: PxIcon;
+      content: "\e01b";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .forceListViewManagerDisplaySwitcher .slds-button span:first-child {
+    &:before {
+      font-family: PxIcon;
+      content: "\e02b";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .forceRefreshButton .slds-button {
+    &:before {
+      font-family: PxIcon;
+      content: "\e021";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .inlineEditTooltipButton .slds-button {
+    &:before {
+      font-family: PxIcon;
+      content: "\e06e";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .forceChartButton .slds-button {
+    &:before {
+      font-family: PxIcon;
+      content: "\e007";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .forceFilterButton .slds-button {
+    &:before {
+      font-family: PxIcon;
+      content: "\e93c";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .slds-icon-utility-down span {
+    &:before {
+      font-family: PxIcon;
+      content: "\e633";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+  .slds-icon-utility-add span {
+    &:before {
+      font-family: PxIcon;
+      content: "\e06a";
+    }
+    svg {
+      display: none;
+    }
+  }
+
+}

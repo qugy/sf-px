@@ -1,0 +1,127 @@
+header
+	&.rs-header
+		.rs-header-logo-proximus-neg
+			display: none
+@media only screen and (min-width: 1281px) // was @media #{$large_up} //!!!!!!!! commented for new media query 09/02/2016
+	.rs-header-transparent
+		.rs-section-under-header
+			padding-top: 13.4rem
+			margin-top: -13.4rem
+		header
+			&.rs-header
+				background: transparent
+				.rs-header-topbar
+					background: transparent
+					&:after
+						content: ""
+						border-bottom: 1px solid rgba($color_c2, 0.2)
+						width: 100%
+						margin-left: auto
+						margin-right: auto
+						margin-top: 0
+						margin-bottom: 0
+						max-width: calc(120rem - 2rem)
+						display: block
+					.rs-segments
+						.rs-segments-list
+							li
+								a
+									color: $color_c2
+									position: relative
+									&:after
+										border-color: rgba($color_c2, 0.2)
+									&:hover
+										color: $color_pp2
+										background-color: transparent
+								&.rs-segment-selected
+									a
+										color: $color_pp2
+										background-color: transparent
+										&:before
+											background: $color_pp2
+											position: absolute
+											bottom: -1px
+											left: 2rem
+											right: 2rem
+											content: ""
+											height: 0.3rem
+					.rs-top-list
+						li
+							a
+								color: $color_c2
+								&:after
+									border-color: rgba($color_c2, 0.2)
+							&:hover
+								background-color: transparent
+								a
+									color: $color_pp2
+							.rs-as
+								.rs-as-label.open
+									background-color: transparent
+									color: $color_pp2
+								.rs-as-drop
+									li
+										a
+											color: $color_c1
+							.rs-header-lang
+								.rs-header-lang-label.open
+									background-color: transparent
+									color: $color_pp2
+								.rs-header-lang-drop
+									li
+										a
+											color: $color_pt3
+											&:hover
+												background-color: $color_pp2
+												color: $color_c2
+
+
+				.rs-header-logobar
+					border-color: rgba($color_c2, 0.2)
+					background-color: transparent
+					.rs-header-logobar-left
+						.rs-header-logo
+							.rs-header-logo-proximus-neg
+								display: inline-block
+							.rs-header-logo-proximus
+								display: none
+						.rs-header-tep
+							li
+								&:after
+									border-color: rgba($color_c2, 0.2)
+								a
+									color: $color_c2
+									&:hover
+										color: $color_pp2
+								&.rs-selected
+									a
+										color: $color_pp2
+					.rs-header-logobar-right
+						background-color: transparent
+						.rs-header-search
+							.rs-header-search-close
+								background-color: $color_c2
+							.rs-header-search-expand
+								color: $color_c2
+								&:hover
+									color: $color_pp2
+							.rs-header-search-small
+								i
+									color: $color_c2
+						.rs-header-top-notif
+							a
+								color: $color_c2
+								&:hover
+									color: $color_pp2
+							.rs-header-eshop
+								[data-open]
+									color: $color_pp2
+						.rs-header-menu
+							.rs-header-menu-icon
+								.rs-header-menu-icon-content,
+								.rs-header-menu-icon-content:after,
+								.rs-header-menu-icon-content:before
+									background-color: $color_c2
+						.rs-header-menu
+							border-color: rgba($color_c2, 0.2)
+

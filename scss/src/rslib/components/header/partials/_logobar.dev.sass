@@ -1,0 +1,396 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-header-logobar
+			width: 100%
+			border-bottom: 1px solid $color_pt5
+		.rs-header-logobar-left,
+		.rs-header-logobar-right
+			padding: 0 1rem
+			position: relative
+		.rs-header-logobar-left
+			float: left
+		.rs-header-logo
+			float: left
+		.rs-header-logo-proximus,.rs-header-logo-proximus-neg
+			margin-bottom: 0
+			height: auto
+		.rs-header-logo-proximus-neg
+			display: none
+		.rs-header-tep
+			padding: 0
+			float: left
+			list-style-type: none
+			li
+				float: left
+				position: relative
+				&.rs-mdd-active
+					a
+						color: $color_pp2
+						&:after,
+						&:before
+							pointer-events: none
+							z-index: 999
+							height: 0
+							width: 0
+							border: 1px solid transparent
+							content: ""
+							position: absolute
+							left: 50%
+							border-width: 2rem
+							margin-left: -2rem
+						&:after
+							border-bottom-color: $color_c2
+							bottom: -0.1rem
+						&:before
+							border-bottom-color: $color_pt5
+							bottom: 0
+				a
+					white-space: nowrap
+					position: relative
+				&.rs-selected
+					a
+						color: $color_pp2
+					&:before
+						background: $color_pp2
+						position: absolute
+						bottom: 0
+						left: 0
+						content: ""
+						height: 0.4rem
+				&.rs-selected.rs-mdd-active
+					&:before
+						display: none
+
+		.rs-header-logobar-right
+			float: right
+			height: 100%
+			text-align: right
+		.rs-header-menu
+			float: right
+			margin: 0 -1rem 0 1rem
+			padding-top: 0.5rem
+			transition-timing-function: linear
+			transition-duration: .15s
+			transition-property: opacity,filter
+			width: 4.5rem
+			height: 5rem
+			text-align: center
+			.rs-header-menu-icon
+				position: relative
+				width: 2.4rem
+				height: 2.4rem
+				display: inline-block
+				.rs-header-menu-icon-content
+					transition-timing-function: cubic-bezier(.55,.055,.675,.19)
+					transition-duration: .1s
+					top: 50%
+					display: block
+					&:before
+						top: -0.8rem
+						transition: top .1s ease .14s,opacity .1s ease
+					&:after
+						bottom: -0.8rem
+					&:before,&:after
+						display: block
+						content: ''
+				.rs-header-menu-icon-content,
+				.rs-header-menu-icon-content:after,
+				.rs-header-menu-icon-content:before
+					width: 2.4rem
+					height: 0.4rem
+					transition-timing-function: ease
+					transition-duration: .15s
+					transition-property: transform
+					border-radius: 2px
+					position: absolute
+					background-color: $color_pp1
+				.rs-header-menu-txt,.rs-header-menu-close-txt
+					font-size: 0.8rem
+					line-height: 0.8rem
+					position: absolute
+					bottom: -1.3rem
+					color: $color_pp1
+					text-transform: uppercase
+				.rs-header-menu-close-txt
+					display: none
+					left: 50%
+					transform: translateX(-50%)
+			&.rs-expanded
+				.rs-header-menu-icon
+					.rs-header-menu-txt
+						display: none
+					.rs-header-menu-close-txt
+						display: block
+				.rs-header-menu-icon-content
+					transition-delay: .14s
+					transition-timing-function: cubic-bezier(.215, .61, .355, 1)
+					transform: rotate(45deg)
+					&:before
+						top: 0
+						transition: top .1s ease,opacity .1s ease .14s
+						opacity: 0
+					&:after
+						bottom: 0
+						transition: bottom .1s ease,transform .1s cubic-bezier(.215, .61, .355, 1) .14s
+						transform: rotate(-90deg)
+
+		.rs-header-notif
+			padding: 0
+			display: inline-block
+			a
+				display: block
+				&[data-open="true"]
+					color: $color_pp2
+					&:after
+						border: solid transparent
+						content: ""
+						height: 0
+						width: 0
+						position: absolute
+						pointer-events: none
+						border-width: 0 6px 5px
+						z-index: 10
+						border-bottom-color: $color_pp1
+
+			li
+				display: inline-block
+				padding: 0.5rem 1.2rem 0 1rem
+				position: relative
+				&:last-child
+					padding-right: 0
+			.rs-header-notif-qt
+				font-size: 1rem
+				line-height: 1rem
+				color: $color_c2
+				margin: 0 0 0 1.7rem
+				padding: 0.3rem 0.5rem
+				background-color: $color_promo
+				position: absolute
+				top: 0
+				z-index: 10
+				border-radius: 0.3rem
+			
+		.rs-header-logobar-cobrand
+			.rs-header-cobrand
+				display: inline-block
+				img
+					width: auto
+					border-left: 2px solid $color_pt1
+		.rs-header-cws
+			color: $color_pp1
+			display: inline-block
+			vertical-align: bottom
+
+		&.rs-header-neg
+			.rs-header-logo-proximus
+				display: none
+			.rs-header-logo-proximus-neg
+				display: inline-block
+
+			.rs-header-logobar
+				border-bottom-color: rgba($color_c2, 0.2)
+			.rs-header-menu
+				.rs-header-menu-icon
+					.rs-header-menu-icon-content,
+					.rs-header-menu-icon-content:after,
+					.rs-header-menu-icon-content:before
+						background-color: $color_c2
+					.rs-header-menu-txt
+						color: $color_c2
+				&.rs-expanded
+					background-color: $color_c2
+					.rs-header-menu-icon
+						.rs-header-menu-icon-content,
+						.rs-header-menu-icon-content:after,
+						.rs-header-menu-icon-content:before
+							background-color: $color_pp1
+				
+.touch
+	header
+		&.rs-header181
+			&.rs-header-neg
+				.rs-header-logobar
+					.rs-header-notif
+						a
+							&:hover
+								i
+									color: $color_c2
+// media queries zone
+//order has to be kept
+@media #{$small_only}
+	header
+		&.rs-header181
+			.rs-header-tep
+				display: none
+			.rs-header-eshop
+				a[data-open="true"]
+					&:after
+						border-bottom-color: #AA2D72
+			.rs-header-notif-msg
+				a
+					&[data-open]
+						&:after
+							border-bottom-color: #4E429E
+							left: 1.6rem
+			.rs-header-notif
+				li
+					&:last-child
+						margin-right: 1rem
+
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-header-logobar-left,
+		.rs-header-logobar-right
+			width: 50%
+		.rs-header-logo
+			padding: 1rem 1rem 1rem 0
+		.rs-header-logo-proximus,.rs-header-logo-proximus-neg
+			height: 3rem
+		.rs-header-logobar-cobrand
+			.rs-header-logobar-left
+				width: 85%
+			.rs-header-logobar-right
+				width: 15%
+			.rs-header-cobrand
+				img
+					margin: 1rem 0
+					padding-left: 1rem
+					height: 3rem
+		.rs-header-cws,.rs-header-satsite-title
+			padding: 1.5rem 0 1.5rem 1rem
+			font-size: 1.4rem
+			line-height: 1.4rem + $txt_lineHeight_diff
+			float: left
+		.rs-header-notif
+			margin: 1rem 0 0 0
+			i
+				font-size: 2.2rem
+			a
+				&[data-open]
+					&:after
+						bottom: -1.4rem
+						left: 1.5rem
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-header-logobar-left
+				width: 61%
+			.rs-header-logobar-right
+				width: 39%
+			.rs-header-logo
+				padding: 1rem 0
+			.rs-header-logo-proximus,.rs-header-logo-proximus-neg
+				height: 4rem
+			.rs-header-tep
+				margin: 0 0 0 3rem
+				li
+					padding: 0 2rem 0 0
+					font-size: $txt_s6_m
+					line-height: $txt_s6_lh_m
+					a
+						padding: 2rem 0
+					&.rs-selected
+						&:before
+							right: 2rem
+			.rs-header-menu
+				display: none
+			.rs-header-logobar-cobrand
+				.rs-header-logobar-left
+					width: 85%
+				.rs-header-logobar-right
+					width: 15%
+				.rs-header-cobrand
+					img
+						margin: 1rem 0 1rem 2rem
+						padding-left: 2rem
+						height: 4rem
+			.rs-header-notif
+				margin: 1.5rem 0 0 0
+				i
+					font-size: 2.4rem
+				a
+					&[data-open]
+						&:after
+							bottom: -2rem
+							left: 1.6rem
+			.rs-header-cws,.rs-header-satsite-title
+				padding: 1.7rem 0 1.7rem 3rem
+				font-size: 2rem
+				line-height: 2rem + $txt_lineHeight_diff
+				font-family: $font_PxBold
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-header-logobar-left
+				width: 62%
+			.rs-header-logobar-right
+				width: 38%
+			.rs-header-logo
+				padding: 1.8rem 0
+			.rs-header-logo-proximus,.rs-header-logo-proximus-neg
+				height: 5rem
+			.rs-header-tep
+				margin: 0rem 0 0 6rem
+				font-size: 2rem
+				line-height: 2rem + $txt_lineHeight_diff
+				li
+					padding: 0 4rem 0 0
+					font-size: $txt_s6_l
+					line-height: $txt_s6_lh_s
+					a
+						padding: 3.2rem 0
+					&.rs-selected
+						&:before
+							right: 4rem
+			.rs-header-logobar-cobrand
+				.rs-header-logobar-left
+					width: 85%
+				.rs-header-logobar-right
+					width: 15%
+				.rs-header-cobrand
+					img
+						margin: 2rem 0 2rem 4rem
+						padding-left: 4rem
+						height: 5rem
+			.rs-header-notif
+				margin: 3rem 0 0 0
+				i
+					font-size: 2.6rem
+				a
+					&[data-open]
+						&:after
+							bottom: -2.5rem
+							left: 1.8rem
+			.rs-header-cws,.rs-header-satsite-title
+				padding: 2.9rem 0 2.9rem 3rem
+				font-size: 2.8rem
+				line-height: 2.8rem + $txt_lineHeight_diff
+
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

@@ -1,0 +1,322 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header
+		.rs-header-mdd
+			position: absolute
+			z-index: 60
+			width: 100%
+			display: none
+			.rs-header-mdd-wrapper
+				position: static
+				background: $color_c2
+				//border-top: 1px solid $color_pt1
+				ul
+					margin: 0
+					padding: 0
+				li
+					display: block
+					padding: 0
+				a,.rs-header-mdd-home-small
+					font-size: 1.6rem
+					line-height: 2rem
+					padding: 1.2rem 1rem
+					display: block
+					color: $color_c1
+					border-bottom: 1px solid $color_pt5
+					font-family: $font_PxBold
+					margin: 0 -1rem
+					i
+						color: $color_pp1
+				.rs-header-mdd-tep
+					.rs-header-mdd-tep-large
+						display: none
+				.rs-header-mdd-list
+
+					.rs-header-mdd-tep-list
+						.rs-header-mdd-panel
+							//display: none
+							position: absolute
+							-moz-transform: translateX(200%)
+							-ms-transform: translateX(200%)
+							-webkit-transform: translateX(200%)
+							transform: translateX(200%)
+							width: 100%
+							top: 0
+							left: 0
+							background-color: $color_c2
+							-moz-transition: ease .5s
+							-o-transition: ease .5s
+							-webkit-transition: ease .5s
+							transition: ease .5s
+							margin: 0
+							&.rs-expanded
+								//display: block
+								-moz-transform: translateX(0)
+								-ms-transform: translateX(0)
+								-webkit-transform: translateX(0)
+								transform: translateX(0)
+								-moz-transition: ease .5s
+								-o-transition: ease .5s
+								-webkit-transition: ease .5s
+								transition: ease .5s
+								.rs-header-mdd-cat-list
+									display: block
+								.rs-header-mdd-panel-title
+									color: $color_pp2
+									font-size: 2rem
+									line-height: 2.4rem
+									i
+										color: $color_pp2
+										-ms-transform: rotate(180deg) /* IE 9 */
+										-webkit-transform: rotate(180deg) /* Chrome, Safari, Opera */
+										transform: rotate(180deg)
+										padding-left: 1rem
+										float: left
+							.rs-header-mdd-panel-desc
+								font-size: 1.2rem
+								line-height: 1.6rem
+								padding: 0
+								font-family: $font_PxReg
+								color: $color_pt3
+					.rs-header-mdd-cat
+						&.rs-expanded
+							.rs-header-mdd-panel
+								display: block
+							.rs-header-mdd-panel-title
+								color: $color_pp2
+								font-size: 2rem
+								line-height: 2.4rem
+								i
+									color: $color_pp2
+									-ms-transform: rotate(180deg) /* IE 9 */
+									-webkit-transform: rotate(180deg) /* Chrome, Safari, Opera */
+									transform: rotate(180deg)
+									padding-left: 1rem
+									float: left
+				.rs-header-mdd-close,p
+					display: none
+				.rs-header-mdd-quicklist
+					i
+						display: none
+				.rs-header-mdd-sticky
+					position: fixed
+					bottom: 0
+					width: 100%
+				.rs-header-mdd-segments,.rs-header-mdd-lang
+					margin: 0 -1rem
+					background-color: $color_pp1
+					border-bottom: 1px solid rgba(255, 255, 255, .4)
+					li
+						display: inline-block
+						a
+							color: $color_c2
+							margin: 0
+							font-family: $font_PxReg
+							border-bottom: none
+							&.rs-selected
+								color: $color_pp2
+				.rs-header-mdd-contact,.rs-header-mdd-shoploc,.rs-header-mdd-quicklist
+					a
+						background: $color_pt1
+						font-family: $font_PxReg
+						border-bottom: 1px solid $color_c2
+
+@media only screen and (max-width: 1280px)
+	header
+		&.rs-header
+			.rs-header-mdd
+				background: $color_c2
+				height: calc(100vh - 185px)
+				overflow-y: auto
+				overflow-x: hidden
+				top: 5.1rem
+				.rs-header-mdd-wrapper
+					a
+						i
+							float: right
+							margin-top: 2px
+					.rs-header-mdd-cat-list
+						li
+							width: 100%
+					.rs-header-mdd-panel
+						background: $color_c2
+						height: calc(100vh - 185px)
+						overflow-y: auto
+						overflow-x: hidden
+						margin: 0
+						a
+							margin: 0
+				.rs-selected,.rs-child-selected
+					>a
+						color: $color_pp2
+						>i
+							color: $color_pp2
+			.rs-header-topbar + .rs-header-logobar + .rs-header-mdd
+				top: 9.5rem
+
+
+
+
+
+// media queries zone
+//order has to be kept
+//@media #{$small_only}
+//@media #{$small_up}
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    CUSTOM BREAKPOINT !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media only screen and (min-width: 1281px)
+	header
+		&.rs-header
+			.rs-header-mdd
+				-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+				-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+				box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3)
+				.rs-header-mdd-wrapper
+					border-top: none
+					.rs-header-mdd-tep
+						.rs-header-mdd-tep-large
+							display: inline
+						.rs-header-mdd-tep-small
+							display: none
+					.rs-header-mdd-close
+						display: block
+						float: right
+						margin-top: 4rem
+						padding: 0
+						border-bottom: none
+						cursor: pointer
+						i
+							color:  $color_pp1
+							font-size: 2rem
+						&:hover
+							i
+								color: $color_pp2
+					a
+						margin: 0
+					.rs-header-mdd-sticky,.rs-header-mdd-home-small,.rs-header-mdd-tep-list-small,.rs-header-mdd-contact,.rs-header-mdd-shoploc, .rs-header-mdd-panel-title,.rs-header-mdd-tep-small-link
+						display: none
+					.rs-header-mdd-list
+						.rs-header-mdd-tep-list
+							display: none
+							a
+								border-bottom: none
+								i
+									display: none
+							&.rs-header-mdd-active
+								display: block
+								.rs-header-mdd-panel
+									display: block
+									position: static
+									transform: translateX(0)
+								.rs-header-mdd-tep
+									font-size: 3rem
+									line-height: 3.4rem
+									padding: 4rem 0
+									color: $color_pp1
+									display: inline-block
+									&:hover
+										color: $color_pp2
+								.rs-header-mdd-cat-list
+									display: block
+									.rs-header-mdd-cat-title
+										font-family: $font_PxBold
+										font-size: 2rem
+										line-height: 2.4rem
+										padding: 0 2rem 1rem 0
+										color: $color_pp1
+										&:hover
+											color: $color_pp2
+									ul
+										display: block
+										padding: 0
+									a
+										padding: 0 2rem 0.7rem 0
+										font-family: $font_PxReg
+										&:hover
+											text-decoration: underline
+											color: $color_pp2
+											.rs-header-mdd-panel-desc
+												color: $color_pp2
+									.rs-header-mdd-cat
+										padding-bottom: 3.5rem
+								.rs-header-mdd-quicklist
+									display: block
+									padding: 4rem 0
+									border-top: 1px solid $color_pt2
+									li
+										display: inline-block
+										a
+											background-color: $color_c2
+											padding: 0 4rem 0 0
+											line-height: 2.8rem
+											i
+												font-size: 2.8rem
+												padding-right: 1rem
+												display: inline-block
+												margin-top: -5px
+											&:hover
+												color: $color_pp2
+												text-decoration: underline
+												i
+													color: $color_pp2
+								.rs-header-mdd-panel-desc
+									display: inline-block
+
+
+/* Styles to fix Safari overflow issue with new HTML structure where rs-mdd-wrapper is separated from the rest */
+
+$headerSafariFixClassname: rs-header-saffix
+
+header
+	&.#{$headerSafariFixClassname}
+		.rs-header-mdd-sticky
+			position: fixed
+			bottom: 0
+			width: 100%
+
+		.rs-header-mdd-segments,
+		.rs-header-mdd-lang
+			margin: 0
+			padding: 0
+			background-color: $color_pp1
+			border-bottom: 1px solid rgba(255, 255, 255, .4)
+			li
+				padding: 0
+				display: inline-block
+				a
+					display: block
+					font-size: 1.6rem
+					line-height: 2rem
+					color: $color_c2
+					padding: 1.2rem 1rem
+					margin: 0
+					font-family: $font_PxReg
+					border-bottom: none
+					&.rs-selected
+						color: $color_pp2
+
+@media only screen and (max-width: 1280px)
+	header
+		&.#{$headerSafariFixClassname}
+			.rs-header-mdd
+				height: calc(100vh - 96px)
+				overflow-y: visible 	//style to override, can be removed afterwards
+				overflow-x: visible 	//style to override, can be removed afterwards
+
+				.rs-header-mdd-wrapper
+					height: calc(100vh - 185px)
+					overflow-y: auto
+					overflow-x: hidden
+
+@media only screen and (min-width: 1281px)
+	header
+		&.#{$headerSafariFixClassname}
+			.rs-header-mdd-sticky
+				display: none

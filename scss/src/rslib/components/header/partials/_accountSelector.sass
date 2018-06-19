@@ -1,0 +1,124 @@
+header
+	&.rs-header
+		.rs-header-topbar
+			.rs-top-list
+				.rs-as
+					.rs-as-label
+						min-height: 4.4rem
+						.rs-as-my
+							float: left
+							padding-right: 0.5rem
+							margin-top: 0.2rem
+						.rs-as-text
+							display: none
+							margin-left: 1rem
+						i
+							float: left
+							margin-top: 0.1rem
+						&.open
+							background-color: $color_pp2
+					.rs-as-drop
+						color: $color_c1
+						//background-color: $color_pt7
+						&:focus
+							outline: none
+						ul
+							padding-bottom: 1rem
+						li
+							padding-bottom: 1rem
+							float: none
+							a
+								padding: 0
+								color: $color_c1
+								//&:hover
+									//text-decoration: none
+							&:hover
+								background: none
+						.rs-as-list
+							list-style: none
+							margin: 0 0 2rem
+							padding: 0
+							max-height: 33.5rem
+							overflow: auto
+							li
+								.rs-as-list-title
+									font-family: $font_PxBold
+									padding-bottom: 0.5rem
+									&:hover
+										cursor: default
+								ul
+									padding: 0
+								li
+									padding-bottom: 0.5rem
+									a
+										color: $color_c1
+										&:after
+											display: none
+										&:hover
+											.rs-as-list-extra
+												text-decoration: none
+									.rs-as-list-extra
+										color: $color_pt3
+										font-size: 1.2rem
+										line-height: 1.6rem
+										display: inline-block
+									&:last-child
+										padding-bottom: 0
+								&:last-child
+									padding-bottom: 0
+						p
+							font-size: $header_font_size_small
+							line-height: $header_font_size_small + $txt_lineHeight_diff
+						&.f-dropdown:before
+							border-color: transparent transparent $color_c2
+							
+					.rs-as-logout
+						float: right
+						ul
+							padding: 0
+						li
+							padding: 0
+								
+
+								
+								
+@media only screen and (min-width: 1281px) // was @media #{$large_up} //!!!!!!!! commented for new media query 09/02/2016
+	header
+		&.rs-header
+			.rs-header-topbar
+				.rs-top-list
+					.rs-as
+						.rs-as-drop
+							p
+								font-size: 1.5rem //$header_font_size_large
+								line-height: $header_font_size_large + $txt_lineHeight_diff
+						.rs-as-label
+							.rs-as-my
+								display: none
+							.rs-as-text
+								max-width: 26rem
+								//!!!!!!!! ADDED for new media query 09/02/2016	
+								display: inline-block	
+								float: left
+								overflow: hidden
+								text-overflow: ellipsis
+								white-space: nowrap
+								margin-top: 0.2rem
+							&.open
+								background-color: $color_pp2
+						//!!!!!!!! ADDED for new media query 09/02/2016	
+						.rs-as-drop
+							p
+								font-size: $header_font_size_medium
+								line-height: $header_font_size_medium + $txt_lineHeight_diff
+
+@media only screen and (max-width: 1280px)
+	header
+		&.rs-header
+			.rs-header-topbar
+				.rs-top-list
+					.rs-as
+						.rs-as-label
+							&:after
+								border-right: none
+								padding-left: 0

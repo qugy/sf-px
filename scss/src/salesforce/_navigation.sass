@@ -1,0 +1,63 @@
+html .forceCommunityGlobalNavigation
+  background-color: $color_pp1
+  ul
+    li
+      a
+        background-color: transparent !important
+        color: $color_c2
+        &:hover, &.slds-is-active
+          color: $color_pp2
+  .slds-list_vertical
+    background-color: $color_pp1
+
+@media only screen and (min-width: 750px)
+  html .forceCommunityGlobalNavigation
+    transition: transform .3s ease-in-out
+    z-index: 10
+    ul
+      margin: 0
+      display: inline-block
+      padding: (2*$ratio)*1rem
+      width: 100%
+      text-align: center
+      transition: padding 200ms ease
+      li
+        display: inline-block
+        position: relative
+        padding: 0
+        a
+          font-size: (1.8*$ratio)*1rem !important
+          line-height: (2.4*$ratio)*1rem !important
+          text-decoration: none
+          font-size: $sysnav_fontSize_L
+          line-height: $sysnav_lineHeight_L
+          padding: (0.5*$ratio)*1rem (2*$ratio)*1rem
+          display: inline-block
+          white-space: nowrap
+          border-right: 1px solid rgba(255, 255, 255, 0.45)
+          &:before
+            background: $color_pp2
+            position: absolute
+            bottom: -(2*$ratio)*1rem
+            left: (2*$ratio)*1rem
+            right: (2*$ratio)*1rem
+            content: ""
+            height: (0.4*$ratio)*1rem
+            //@include transform(scaleX(0))
+            transform: scaleX(0)
+            transition: 300ms
+          &:hover, &.slds-is-active
+            text-decoration: none
+            transition: all 0.2s ease-in-out
+            &:before
+              background: $color_pp2
+              position: absolute
+              bottom: -(2*$ratio)*1rem
+              left: (2*$ratio)*1rem
+              right: (2*$ratio)*1rem
+              content: ""
+              height: (0.4*$ratio)*1rem
+              //@include transform(scaleX(1))
+              transform: scaleX(1)
+        &:last-child a
+          border-right: none

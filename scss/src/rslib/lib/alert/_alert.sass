@@ -1,0 +1,206 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    Foundation RESET
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.alert-box
+	background: $alert_box_bg_color
+	font-size: $alert_box_font_size
+	border-color: $alert_box_border_color
+	border-radius: $radius
+	.close
+		color: $alert_box_close_color
+		line-height: 1
+		padding: 0
+		&:hover
+			color: $alert_box_close_hover_color
+		&:focus
+			color: $alert_box_close_focus_color
+	&.success
+		background: $alert_box_success_bg_color
+		border-color: $alert_box_success_border_color
+	&.warning
+		background: $alert_box_warning_bg_color
+		border-color: $alert_box_warning_border_color
+	&.error
+		background: $alert_box_error_bg_color
+		border-color: $alert_box_error_border_color
+	&.congrats
+		background: $alert_box_congrats_bg_color
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+.alert-box
+	.rs-last
+		height: 3.6rem
+		vertical-align: middle
+	.icon-Information-box,
+	.icon-Validation-box,
+	.icon-Warning-box,
+	.icon-Error-box,
+	.icon-Congratulations-box
+		font-size: 2.8rem
+		line-height: 1
+		display: block
+		padding-bottom: 2rem
+	.icon-Information-box
+		color: $color_pp1
+	.icon-Validation-box
+		color: $color_success
+	.icon-Warning-box,
+	.icon-Error-box
+		color: $color_error
+	.icon-Congratulations-box
+		color: $color_ps3
+	.close
+		font-size: 3rem
+		right: 0.6rem
+		top: 1.2rem
+		.icon-Close
+			font-size: 2rem
+			padding-right: 0.4rem
+	.rs-alert-box-title
+		color: $color_pp1
+		font-family: $font_PxBold
+		font-size: $txt_s6_s
+		line-height: $txt_s6_lh_s
+	&.success
+		.rs-alert-box-title
+			color: $color_success
+	&.warning,&.error
+		.rs-alert-box-title
+			color: $color_error
+	&.congrats
+		.rs-alert-box-title
+			color: $color_ps3
+.rs-alert
+	box-shadow: $alert_shadow
+	.close
+		text-decoration: $alert_close_txt_decoration
+		font-size: $alert_close_font_size_S
+		line-height: $alert_close_line_height_S
+		margin-top: $alert_close_margin_top
+		padding: $alert_close_padding
+		position: absolute
+		right: $alert_close_right
+		top: $alert_close_top
+		color: $alert_close_color
+
+		
+.rs-alert-box
+	padding: $alert_bx_padding
+	position: relative	
+	
+.rs-alert-login
+	background-color: $alert_login_bg_color
+	position: relative
+	z-index: 100
+	.rs-alert-box
+		padding: $alert_login_box_padding_S
+	.rs-btn
+		margin-bottom: $alert_login_btn_marginBottom_S
+		float: right
+	.close
+		padding: $alert_cookie_close_padding_M
+.rs-alert-confirm
+	background-color: $alert_confirm_bg_color
+.rs-alert-error
+	background-color: $alert_error_bg_color
+.rs-alert-info
+	background-color: $alert_info_bg_color
+
+
+.rs-alert-cookie
+	background-color: $alert_cookie_bg_color
+	box-shadow: $alert_cookie_box_shadow
+	position: $alert_cookie_position
+	z-index: $alert_cookie_zindex
+	.rs-alert-box
+		padding: $alert_cookie_box_padding_S
+	.close
+		padding:  $alert_cookie_close_padding_M
+		color: $alert_cookie_close_color
+		&:hover	
+			color: $alert_cookie_close_hover_color
+	.rs-btn
+		margin-bottom: $alert_cookie_btn_marginBottom_S
+		float: right
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@media #{$medium_up}
+	.alert-box
+		.icon-Information-box,
+		.icon-Validation-box,
+		.icon-Warning-box,
+		.icon-Error-box,
+		.icon-Congratulations-box
+			font-size: $txt_s10_lh_m
+		.close
+			font-size: 3.5rem
+			right: 1.1rem
+			top: 1.7rem
+		.rs-alert-box-title
+			font-size: $txt_s6_m
+			line-height: $txt_s6_lh_m
+	.rs-alert
+		.close
+			font-size: $alert_close_font_size_M
+			line-height: $alert_close_line_height_M
+	.rs-alert-cookie
+		.rs-alert-box
+			padding: $alert_cookie_box_padding_M
+		.close
+			padding:  $alert_cookie_close_padding_M
+		.rs-btn
+			margin-bottom: $alert_cookie_btn_marginBottom_M
+			float: none
+	.rs-alert-login
+		.rs-alert-box
+			padding: $alert_login_box_padding_M
+		.rs-btn
+			margin-bottom: $alert_login_btn_marginBottom_M
+			float: none
+		.close
+			padding: $alert_cookie_close_padding_M
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@media #{$large_up}		
+	.alert-box
+		padding-right: 4.4rem
+		.icon-Information-box,
+		.icon-Validation-box,
+		.icon-Warning-box,
+		.icon-Error-box,
+		.icon-Congratulations-box
+			font-size: $txt_s8_lh_l
+		.close
+			font-size: 3.5rem
+			right: 1.6rem
+			top: 2.2rem
+			.icon-Close
+				padding-right: 0.4rem
+		.rs-alert-box-title
+			font-size: $txt_s6_l
+			line-height: $txt_s6_lh_l
+	.rs-alert
+		.close
+			font-size: $alert_close_font_size_L
+			line-height: $alert_close_line_height_L
+

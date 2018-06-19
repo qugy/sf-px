@@ -1,0 +1,114 @@
+html
+
+  .rs-auto, .rs-last
+    padding-left: (1*$ratio)*1rem
+    padding-right: (1*$ratio)*1rem
+
+  header.rs-header181
+    .rs-header-topbar
+      a
+        padding: (1*$ratio)*1rem 0
+      .rs-segments-list > li, .rs-top-list > li, .rs-header-extraList ul > li
+        padding-right: (2*$ratio)*1rem
+      .f-dropdown li a
+        padding: (1.2*$ratio)*1rem (1*$ratio)*1rem
+      .rs-top-list .rs-header-lang
+        i
+          margin-left: (1*$ratio)*1rem
+          margin-top: (0.3*$ratio)*1rem
+        .rs-header-lang-label .rs-header-lang-txt
+          margin-top: (0.2*$ratio)*1rem
+      .rs-segments .rs-segments-list li.rs-segment-selected::before
+        right: (2*$ratio)*1rem
+        height: (0.3*$ratio)*1rem
+
+  .alert-box
+    padding: (2*$ratio)*1rem (3.4*$ratio)*1rem 0 (2*$ratio)*1rem
+    margin-bottom: (2*$ratio)*1rem
+    font-size: $txt_size_M
+    p
+      padding-bottom: 1.25rem
+    .rs-last
+      height: (3.6*$ratio)*1rem
+    .icon-Information-box, .icon-Validation-box, .icon-Warning-box, .icon-Error-box, .icon-Congratulations-box
+      font-size: (2.8*$ratio)*1rem
+      padding-bottom: $spacingDefault
+    .close
+      font-size: (3*$ratio)*1rem
+      right: (0.6*$ratio)*1rem
+      top: (1.2*$ratio)*1rem
+      .icon-Close
+        font-size: (2*$ratio)*1rem
+        padding-right: (0.4*$ratio)*1rem
+    .rs-alert-box-title
+      font-size: (1.6*$ratio)*1rem
+
+  .slds-m-bottom_small .alert-box
+    margin-bottom: 0
+
+@media #{$small_only}
+  html header.rs-header181
+    .rs-header-logo
+      padding: (1*$ratio)*1rem (1*$ratio)*1rem (1*$ratio)*1rem 0
+    .rs-header-logo-proximus, .rs-header-logo-proximus-neg
+      height: (3*$ratio)*1rem
+
+@media #{$medium_up}
+  html header.rs-header181
+    .rs-header-logo
+      padding: (1*$ratio)*1rem 0
+    .rs-header-logo-proximus, .rs-header-logo-proximus-neg
+      height: (4*$ratio)*1rem
+    .rs-header-tep
+      margin-left: (3*$ratio)*1rem
+      li
+        padding-right: $spacingDefault
+        font-size: (1.8*$ratio)*1rem
+        line-height: (2.4*$ratio)*1rem
+        a
+          padding: $spacingDefault 0
+        &.rs-selected
+          &:before
+            right: 2rem
+  html .alert-box
+    .icon-Information-box, .icon-Validation-box, .icon-Warning-box, .icon-Error-box, .icon-Congratulations-box
+      font-size: (3.4*$ratio)*1rem
+    .close
+      font-size: (3.5*$ratio)*1rem
+      right: (1.1*$ratio)*1rem
+      top: (1.7*$ratio)*1rem
+    .rs-alert-box-title
+      font-size: (1.8*$ratio)*1rem
+      line-height: (2.4*$ratio)*1rem
+
+
+@media #{$large_up}
+  html header.rs-header181
+    .rs-header-logo
+      padding: (1.8*$ratio)*1rem 0
+    .rs-header-logo-proximus, .rs-header-logo-proximus-neg
+      height: (5*$ratio)*1rem
+    .rs-header-tep
+      margin-left: (6*$ratio)*1rem
+      li
+        padding-right: (4*$ratio)*1rem
+        font-size: (2*$ratio)*1rem
+        line-height: (2.6*$ratio)*1rem
+        a
+          padding: (3.2*$ratio)*1rem 0
+        &.rs-selected
+          &:before
+            right: (4*$ratio)*1rem
+  html .alert-box
+    padding-right: (4.4*$ratio)*1rem
+    .icon-Information-box, .icon-Validation-box, .icon-Warning-box, .icon-Error-box, .icon-Congratulations-box
+      font-size: (3.6*$ratio)*1rem
+    .close
+      font-size: (3.5*$ratio)*1rem
+      right: (1.6*$ratio)*1rem
+      top: (2.2*$ratio)*1rem
+      .icon-Close
+        padding-right: (0.4*$ratio)*1rem
+    .rs-alert-box-title
+      font-size: (2*$ratio)*1rem
+      line-height: (2.6*$ratio)*1rem

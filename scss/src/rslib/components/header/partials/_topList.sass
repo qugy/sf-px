@@ -1,0 +1,46 @@
+header
+	&.rs-header
+		.rs-header-topbar
+			.rs-top-list
+				padding: 0
+				margin: 0
+				float: right
+				i.icon-Messaging,i.icon-Alarm
+					line-height: 1
+					float: left
+					font-size: 1.33333em
+				i.icon-Alarm
+					margin-top: 0.2rem
+				li
+					display: block //inline
+					padding: 0
+					float: left
+					a
+						display: block
+						color: white	
+						padding: 1.2rem 0 1.2rem 1rem
+						&:after
+							content: ""
+							border-right: 1px solid rgba(255, 255, 255, .4)
+							padding-left: 1rem
+							font-size: 2rem
+					&:last-child
+						a:after
+							border-right: none
+							padding-left: 1px
+
+@media only screen and (min-width: 1281px) // was @media #{$large_up} //!!!!!!!! commented for new media query 09/02/2016
+	header
+		&.rs-header
+			.rs-header-topbar
+				.rs-top-list
+					li
+						&:hover
+							background-color: $color_pp2
+						a
+							padding: 1.2rem 0 1.2rem 2rem
+							&:after
+								padding-left: 2rem
+						&:last-child
+							a
+								padding: 1.2rem 2rem

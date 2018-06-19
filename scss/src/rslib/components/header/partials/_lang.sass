@@ -1,0 +1,39 @@
+header
+	&.rs-header
+		.rs-header-topbar
+			.rs-top-list
+				.rs-header-lang
+					display: none
+					i
+						margin-left: 1rem
+						margin-top: 0.1rem
+						float: left
+					.rs-header-lang-drop
+						li
+							float: none
+							a
+								color: $color-pt3
+								padding: 1.2rem 1rem
+								&:hover
+									color: white
+								&:after
+									display: none
+					.rs-header-lang-label
+						.rs-header-lang-txt
+							float: left
+							margin-top: 0.2rem
+						&.open
+							background-color: $color_pp2
+							
+@media only screen and (min-width: 1281px)
+	header
+		&.rs-header
+			.rs-header-topbar
+				.rs-top-list
+					.rs-header-lang
+						display: block
+						.rs-header-lang-drop
+							li
+								a
+									padding: 0.6rem 3.2rem
+

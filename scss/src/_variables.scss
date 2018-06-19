@@ -1,0 +1,57 @@
+$ratio: 0.625;
+
+@import "rslib/_settings";
+@import "rslib/_mixins";
+
+// Colors
+
+$colorInput: #283451;
+$colorInputBg: #f1f3f8;
+$colorInputBorder: #c2cbe0;
+$colorInputDisabled: #cfcad2;
+
+// Fonts
+$fontPath: '../fonts/';
+$fontNormal: 'ProximusRegular';
+$fontBold: 'ProximusBold';
+$fontIcon: 'PxIcon';
+
+$fontBaseSize: (1.4*$ratio)*1rem;
+$fontBaseLineHeight: (1.8*$ratio)*1rem;
+$fontBaseWeight: 400;
+$fontIconSize: (2*$ratio)*1rem;
+
+$txt_size_S: (1.3*$ratio)*1rem;
+$txt_size_M: (1.4*$ratio)*1rem;
+$txt_size_L: (1.6*$ratio)*1rem;
+
+$txt_lineHeight_diff: (0.6*$ratio)*1rem;
+$txt_lineHeight_S: $txt_size_S+$txt_lineHeight_diff;
+$txt_lineHeight_M: $txt_size_M+$txt_lineHeight_diff;
+$txt_lineHeight_L: $txt_size_L+$txt_lineHeight_diff;
+
+$header_bg: $color_c2;
+$header_font_size_small: $txt_size_S;
+$header_font_size_medium: $txt_size_M;
+$header_font_size_large: $txt_size_L;
+
+// Border radius
+$borderRadius: (1*$ratio)*1rem;
+$borderRadiusSmall: (0.6*$ratio)*1rem;
+$radius: (0.4*$ratio)*1rem;
+$radius_small: 5px;
+
+// Spacing
+$spacingDefault: (2*$ratio)*1rem;
+$spacingContent: 0 0 #{$spacingDefault};
+$spacingTitle: 0 0 #{$spacingDefault};
+$spacing1: (1*$ratio)*1rem;
+$spacing2: (2*$ratio)*1rem;
+
+$columnSpacing: (1.5*$ratio)*1rem;
+
+// Forms
+$forms_label_font_size_S: $txt_size_S;
+$forms_label_font_size_M: $txt_size_M;
+$forms_label_font_size_L: $txt_size_L;
+$txt_lineHeight_diff: (0.4*$ratio)*1rem;

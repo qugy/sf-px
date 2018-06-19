@@ -1,0 +1,93 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-header-notif-msg-drop
+			text-align: left
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2)
+			position: absolute
+			padding: 1rem
+			background-color: $color_c2
+			border-radius: $radius
+			h4
+				+mxGradient3(h, $gradient_g1_start, 48%, $gradient_g1_mid, 71%, $gradient_g1_end, 100%)
+				color: $color_c2
+				padding: 1rem
+				text-align: center
+				margin: -1rem -1rem 2rem  !important
+			i
+				font-size: 3.5rem
+				padding-bottom: 2rem
+				display: block
+			i,strong
+				color: $color_pp1
+			small
+				color: $color_ps2
+				display: block
+				font-size: $txt_s2_s
+				line-height: $txt_s2_lh_s
+			a
+				color: $color_link
+				display: inline-block
+				text-decoration: underline
+				&:hover
+					color: $color_pp2
+			.rs-btn
+				color: $color_c2
+				margin-bottom: 1rem
+				text-decoration: none
+				&:hover
+					color: $color_c2
+// media queries zone
+//order has to be kept
+//@media #{$small_only}
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-header-notif-msg-drop
+			width: calc(100vw - 4rem)
+			top: 4.1rem
+			right: -7.5rem//(width/2)-2rem
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-header-notif-msg-drop
+				width: 35rem
+				top: 4.8rem
+				right: -15rem //(width/2)-2rem
+				padding: 2rem
+				h4
+					padding: 2rem
+					margin: -2rem -2rem 2rem  !important
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-header-notif-msg-drop
+				width: 40rem
+				top: 5.6rem
+				right: -18rem //(width/2)-2rem
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

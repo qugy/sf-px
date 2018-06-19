@@ -1,0 +1,152 @@
+//page for generic Mixins!   do not create here mixins used in only one SASS.
+
+
+@mixin mxGradient2($mx_type, $mx_color_1,$mx_position_1,$mx_color_2,$mx_position_2)
+	//More info @https://css-tricks.com/css3-gradients/
+	//More info @http://www.w3schools.com/css/css3_gradients.asp
+	//Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ebe2ef+71,d1bbda+100
+
+	$mx_direction_from: left
+	$mx_direction_to: to right
+	$mx_direction_from_combi: left top
+	$mx_direction_to_combi: right top
+	$mx_gtype: 1
+	@if $mx_type==v
+		$mx_direction_from: top
+		$mx_direction_to: to bottom
+		$mx_direction_from_combi: left top
+		$mx_direction_to_combi: left bottom
+		$mx_gtype: 0
+		
+	background: $mx_color_1 // Old browsers
+	background: -moz-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1, $mx_color_2 $mx_position_2) // FF3.6+ 
+	background: -webkit-gradient(linear, $mx_direction_from_combi, $mx_direction_to_combi, color-stop($mx_position_1,$mx_color_1), color-stop($mx_position_2,$mx_color_2)) // Chrome,Safari4+ 
+	background: -webkit-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2) // Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2) // Opera 11.10+ 
+	background: -ms-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2) // IE10+ 
+	background: linear-gradient($mx_direction_to,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2) // W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mx_color_1}', endColorstr='#{$mx_color_2}',GradientType=$mx_gtype ) // IE6-9 
+	
+	
+@mixin mxGradient3($mx_type, $mx_color_1,$mx_position_1,$mx_color_2,$mx_position_2,$mx_color_3,$mx_position_3)
+	//More info @https://css-tricks.com/css3-gradients/
+	//More info @http://www.w3schools.com/css/css3_gradients.asp
+
+	//@if $mx_type==h
+	//default is horizontal
+	$mx_direction_from: left
+	$mx_direction_to: to right
+	$mx_direction_from_combi: left top
+	$mx_direction_to_combi: right top
+	$mx_gtype: 1
+	@if $mx_type==v
+		$mx_direction_from: top
+		$mx_direction_to: to bottom
+		$mx_direction_from_combi: left top
+		$mx_direction_to_combi: left bottom
+		$mx_gtype: 0
+		
+	background: $mx_color_1 // Old browsers
+	background: -moz-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1, $mx_color_2 $mx_position_2, $mx_color_3 $mx_position_3) // FF3.6+ 
+	background: -webkit-gradient(linear, $mx_direction_from_combi, $mx_direction_to_combi, color-stop($mx_position_1,$mx_color_1), color-stop($mx_position_2,$mx_color_2), color-stop($mx_position_3,$mx_color_3)) // Chrome,Safari4+ 
+	background: -webkit-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3) // Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3) // Opera 11.10+ 
+	background: -ms-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3) // IE10+ 
+	background: linear-gradient($mx_direction_to,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3) // W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mx_color_1}', endColorstr='#{$mx_color_3}',GradientType=$mx_gtype ) // IE6-9 
+
+@mixin mxGradient4($mx_type, $mx_color_1,$mx_position_1,$mx_color_2,$mx_position_2,$mx_color_3,$mx_position_3,$mx_color_4,$mx_position_4)
+	//More info @https://css-tricks.com/css3-gradients/
+	//More info @http://www.w3schools.com/css/css3_gradients.asp
+
+	//@if $mx_type==h
+	//default is horizontal
+	$mx_direction_from: left
+	$mx_direction_to: to right
+	$mx_direction_from_combi: left top
+	$mx_direction_to_combi: right top
+	$mx_gtype: 1
+	@if $mx_type==v
+		$mx_direction_from: top
+		$mx_direction_to: to bottom
+		$mx_direction_from_combi: left top
+		$mx_direction_to_combi: left bottom
+		$mx_gtype: 0
+		
+	background: $mx_color_1 // Old browsers
+	background: -moz-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1, $mx_color_2 $mx_position_2, $mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4) // FF3.6+ 
+	background: -webkit-gradient(linear, $mx_direction_from_combi, $mx_direction_to_combi, color-stop($mx_position_1,$mx_color_1), color-stop($mx_position_2,$mx_color_2), color-stop($mx_position_3,$mx_color_3), color-stop($mx_position_4,$mx_color_4)) // Chrome,Safari4+ 
+	background: -webkit-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3,$mx_color_4 $mx_position_4) // Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3,$mx_color_4 $mx_position_4) // Opera 11.10+ 
+	background: -ms-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3,$mx_color_4 $mx_position_4) // IE10+ 
+	background: linear-gradient($mx_direction_to,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3,$mx_color_4 $mx_position_4) // W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mx_color_1}', endColorstr='#{$mx_color_4}',GradientType=$mx_gtype ) // IE6-9 
+
+@mixin mxGradient6($mx_type, $mx_color_1,$mx_position_1,$mx_color_2,$mx_position_2,$mx_color_3,$mx_position_3,$mx_color_4,$mx_position_4,$mx_color_5,$mx_position_5,$mx_color_6,$mx_position_6)
+	//More info @https://css-tricks.com/css3-gradients/
+	//More info @http://www.w3schools.com/css/css3_gradients.asp
+
+	//@if $mx_type==h
+	//default is horizontal
+	$mx_direction_from: left
+	$mx_direction_to: to right
+	$mx_direction_from_combi: left top
+	$mx_direction_to_combi: right top
+	$mx_gtype: 1
+	@if $mx_type==v
+		$mx_direction_from: top
+		$mx_direction_to: to bottom
+		$mx_direction_from_combi: left top
+		$mx_direction_to_combi: left bottom
+		$mx_gtype: 0
+		
+	background: $mx_color_1 // Old browsers
+	background: -moz-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1, $mx_color_2 $mx_position_2, $mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4, $mx_color_5 $mx_position_5, $mx_color_6 $mx_position_6) // FF3.6+ 
+	background: -webkit-gradient(linear, $mx_direction_from_combi, $mx_direction_to_combi, color-stop($mx_position_1,$mx_color_1), color-stop($mx_position_2,$mx_color_2), color-stop($mx_position_3,$mx_color_3), color-stop($mx_position_4,$mx_color_4), color-stop($mx_position_5,$mx_color_5), color-stop($mx_position_6,$mx_color_6)) // Chrome,Safari4+ 
+	background: -webkit-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4, $mx_color_5 $mx_position_5, $mx_color_6 $mx_position_6) // Chrome10+,Safari5.1+ 
+	background: -o-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4, $mx_color_5 $mx_position_5, $mx_color_6 $mx_position_6) // Opera 11.10+ 
+	background: -ms-linear-gradient($mx_direction_from,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4, $mx_color_5 $mx_position_5, $mx_color_6 $mx_position_6) // IE10+ 
+	background: linear-gradient($mx_direction_to,  $mx_color_1 $mx_position_1,$mx_color_2 $mx_position_2,$mx_color_3 $mx_position_3, $mx_color_4 $mx_position_4, $mx_color_5 $mx_position_5, $mx_color_6 $mx_position_6) // W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$mx_color_1}', endColorstr='#{$mx_color_6}',GradientType=$mx_gtype ) // IE6-9 
+
+
+@mixin mxGradientL($mxDir,$mxFallback,$mxColors...)
+	//$mxFallback is the fallback as uniform bg color
+	$mx-tt: ''
+	$mxDirTxt: 90deg
+	@if $mxDir==1
+		$mxDirTxt: 180deg
+	@if $mxDir==2
+		$mxDirTxt: 225deg
+	@if $mxDir==3
+		$mxDirTxt: 270deg
+	@if $mxDir==4
+		$mxDirTxt: 315deg
+	@if $mxDir==5
+		$mxDirTxt: 0deg
+	@if $mxDir==6
+		$mxDirTxt: 45deg
+	@if $mxDir==7
+		$mxDirTxt: 90deg
+	@if $mxDir==8
+		$mxDirTxt: 135deg
+
+		
+	$mx-tt: $mxColors
+	//@each $mxXolor in $mxColors
+		//@if  $mx-tt==''
+			//$mx-tt: $mxColors
+		//@else
+			//$mx-tt: $mx-tt + ','+ $mxColors
+	//background-color: $mxFallback //$mxFallback is the fallback as uniform bg color
+	background-image: linear-gradient($mxDirTxt, $mx-tt)
+
+
+@mixin mxGradientTxt($mx_color_1,$mx_color_2)
+
+	color: $mx_color_1 //IE
+	background: -webkit-gradient(linear, left top, right top, color-stop(20%, $mx_color_1), color-stop(100%, $mx_color_2))
+	background: -webkit-linear-gradient(left, $mx_color_1 20%, $mx_color_2 100%)
+	-webkit-background-clip: text !important
+	-webkit-text-fill-color: transparent !important
+	display: inline-block

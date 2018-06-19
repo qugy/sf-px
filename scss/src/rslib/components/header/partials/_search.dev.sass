@@ -1,0 +1,169 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-header-search
+			//width: 4.6rem
+			.rs-header-search-expand
+				font-size: 2.4rem
+				text-decoration: none
+				float: right
+				padding: 1rem
+				margin: 0 -1rem
+				.icon-Search
+					padding-right: 0
+					margin-top: 0.2rem
+			.rs-searchForm
+				transform: scaleX(0)
+				transition: all .6s cubic-bezier(.645, .045, .355, 1)
+				float: right
+				position: relative
+				width: 0vw
+				z-index: 100
+				.rs-header-search-close
+					position: absolute
+					left: 0
+					padding: 0.9rem 1rem 0
+					z-index: 2
+					background: transparent !important
+					border: 0
+					color: $color_pp1
+					display: none
+					&:hover
+						color: $color_pp2
+				.rs-searchbox-sug
+					position: absolute
+					z-index: 70
+					display: none
+					width: 100%
+					a
+						padding: 0
+						white-space: normal
+						display: inline
+						&:hover
+							text-decoration: underline
+					.row
+						margin-left: 0
+						margin-right: 0
+					ul
+						padding-bottom: 1rem
+				input
+					margin: 0
+					z-index: 1
+					position: relative
+					padding: 0.9rem 1rem 0.9rem 3rem
+					border: 0
+					height: auto
+					background: transparent
+					font-size: $header_font_size_medium
+					pointer-events: none
+			&.expanded
+				//width: 40rem
+				&:before
+					background: $color_pp1
+					position: absolute
+					bottom: -1px
+					left: 0
+					right: 1rem
+					content: ""
+					height: 0.3rem
+				.rs-header-search-expand
+					background: rgba($color_pp1, 0.1)
+				.rs-searchForm
+					transform: scaleX(1)
+					input
+						pointer-events: auto
+					.rs-header-search-close
+						display: inline
+		&.rs-header-neg
+			.rs-header-search
+				&.expanded
+					&:before
+						background: $color_pt5
+					.rs-header-search-expand
+						background: rgba($color_c2, 0.3)
+						&:hover
+							background: rgba($color_c2, 0.3)
+.no-touch
+	header
+		&.rs-header181
+			.rs-header-search
+				&.expanded
+					.rs-header-search-expand
+						&:hover
+							background: $color_pt10
+			&.rs-header-neg
+				.rs-header-search
+					&.expanded
+						.rs-header-search-expand
+							&:hover
+								background: rgba($color_c2, 0.3)
+
+// media queries zone
+//order has to be kept
+//@media #{$small_only}
+					
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-header-search
+			.rs-searchForm
+				input
+					padding: 1.1rem 1rem 0.7rem 3rem
+			&.expanded
+				.rs-searchForm
+					width: calc(100vw - 11rem)
+		&.rs-header-neg
+			.rs-header-search
+				.rs-searchForm
+					input,.rs-header-search-close
+						color: $color_c2
+					input
+						&::placeholder
+							color: rgba($color_c2,.5)
+				
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-header-search
+				.rs-searchForm
+					input
+						padding: 0.9rem 1rem 0.9rem 3rem
+
+
+				&.expanded
+					.rs-searchForm
+						width: 25vw
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-header-search
+				&.expanded
+					.rs-searchForm
+						width: 20vw
+
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

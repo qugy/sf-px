@@ -1,0 +1,295 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-as
+			float: right
+			background-color: rgba($color_pp1, 0.1)
+			border-radius: $btn_radius
+			color: $color_pp1
+			text-align: $btn_txt_align
+			vertical-align: $btn_txt_valign
+			margin-left: 3rem
+			i
+				transition: all .1s ease-in
+				float: right
+				margin-left: 1rem
+			&:hover,
+			&.open
+				background: $color_pt10
+			&.open
+				border-radius: 0
+				i
+					transform: rotate(180deg)
+		.rs-as-label
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			float: left
+
+		.rs-header-mdd-panel-as
+			margin: 0
+			padding: 0 1rem
+			position: absolute
+			transform: translateX(200%)
+			width: 100%
+			top: 0
+			left: 0
+			background-color: $color_c2
+			transition: ease .5s
+			&.rs-expanded
+				transform: translateX(0)
+				transition: ease .5s
+				a
+					border-bottom: none
+					&.rs-as-account-current
+						i
+							flex: 0 0 2rem
+
+
+			.rs-header-mdd-panel-as-login
+				background-color: $color_pp1
+				margin: 0 -1rem
+				.rs-header-mdd-close-small
+					padding-right: 1rem
+				.rs-as-account-info
+					display: block
+					color: rgba($color_c2,0.7)
+					padding-left: 4rem
+		.rs-header-mdd-wrapper,.rs-header-logobar
+			
+			.rs-as-account
+				padding: 2rem 1rem
+				display: flex
+				align-items: center
+				height: auto
+				border-bottom: none
+				white-space: normal
+				img
+					border-radius: 50%
+					margin: 0 1rem
+					width: 4rem
+					height: 4rem
+				i
+					margin-top: 0
+					flex: 1 1 0px
+					text-align: right
+			a
+				&.rs-as-add
+					background-color: $color_c2
+					color: $color_pp1
+					font-family: $font_PxBold
+					i
+						color: $color_pp1
+						&.icon-Plus-fill
+							flex: 0 0 6rem
+							text-align: center
+							padding-right: 0
+				&.rs-btn-as
+					color: $color_c2
+					border: 1px solid $color_c2
+					border-radius: $btn_radius
+					margin: 0 1rem 1rem 4rem
+					text-align: center
+					padding: 1rem 2rem
+					&:hover
+						border-color: $color_pp2
+				&.rs-as-logout
+					text-decoration: underline
+					padding-bottom: 2rem
+		.rs-header-mdd-wrapper
+			a
+				&.rs-as-logout
+					font-size: 1.4rem
+					line-height: 1.4rem + $txt_lineHeight_diff
+					color: $color_c2
+					margin: 0 0 0 3rem
+				&.rs-as-account-current
+					background-color: $color_pp1
+					color: $color_c2
+					i
+						color: $color_c2
+						padding-right: 0
+			
+		.rs-as-drop
+			padding: 0
+			background-color: $color_pt10
+			text-align: left
+			border: 0
+			box-shadow : 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
+			border-radius: $radius
+			&:before,&:after
+				display: none
+			&:focus
+				outline: none
+			.rs-as-account
+				background-color: $color_pt10
+				&.rs-as-account-current
+					padding-bottom: 0
+			.rs-as-logout
+				color: $color_ps2
+				margin: 0 2rem 0 1rem
+				text-align: right
+				display: block
+			.rs-btn-as,&.rs-as-logout
+				display: inline-block
+		.rs-as-sublink
+			color: $color_c1
+			display: inline-block
+			padding: 0 1rem 1rem 7rem
+			i
+				padding-right: 1rem
+		.rs-as-account-info
+			padding: 0 2rem 1rem 7rem
+			font-size: 1.2rem
+			line-height: 1.2rem + $txt_lineHeight_diff
+		.rs-as-list
+			margin: 0
+			padding: 0
+			background-color: $color_c2
+			list-style: none
+			max-height: 20rem
+			overflow: auto
+			clear: both
+			li
+				border-bottom: 1px solid $color_pt8
+				margin: 0 1rem
+			.rs-as-account
+				background-color: $color_c2
+				color: $color_pp1
+				span
+					color: $color_ps2
+					font-size: 1.2rem
+					line-height: 1.2rem + $txt_lineHeight_diff
+					padding-right: 0
+					padding-left: 1rem
+					flex: 1 1 0px
+					text-align: right
+					text-decoration: underline
+				img
+					margin-left: 0
+		&.rs-header-neg
+			.rs-as
+				background-color: rgba($color_c2, 0.3)
+				&.open
+					background-color: $color_pt10
+					color: $color_pp1
+				&:hover
+					color: $color_pp2
+			.rs-as-drop
+				a
+					color: $color_pp1
+					&:hover
+						color: $color_pp2 !important
+					&.rs-as-logout
+						color: $color_ps2
+					&.rs-as-sublink
+						color: $color_c1
+
+.touch
+	header
+		&.rs-header181
+			.rs-header-logobar
+				a
+					&:hover
+						i
+							color: $color_pp1
+					&[data-open]
+						i
+							color: $color_pp2
+			.rs-header-mdd-wrapper
+				.rs-as-account-current
+					&:hover
+						color: $color_c2
+						i
+							color: $color_c2
+			
+				a
+					&.rs-btn-as,
+					&.rs-as-logout
+						&:hover
+							border-color: $color_c2
+							color: $color_c2
+
+// media queries zone
+//order has to be kept
+//@media #{$small_only}
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-as
+			//font-size: $btn_large_txt_size_S
+			//line-height: $btn_large_lineHeight_S
+			padding: $btn_large_padding_S
+			display: none
+		.rs-as-drop
+			font-size: $header_font_size_small
+			line-height: $header_font_size_small+$txt_lineHeight_diff
+			li
+				font-size: $header_font_size_small
+				line-height: $header_font_size_small+$txt_lineHeight_diff
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-as
+				//font-size: $btn_txt_size_M
+				//line-height: $btn_lineHeight_M
+				padding: $btn_padding
+				margin-top: 1.1rem
+				display: inline-block
+			.rs-as-label
+				width: 15rem
+			.rs-as-drop
+				font-size: $header_font_size_medium
+				line-height: $header_font_size_medium+$txt_lineHeight_diff
+				li
+					font-size: $header_font_size_medium
+					line-height: $header_font_size_medium+$txt_lineHeight_diff
+			.rs-as-add
+				width: 100%
+	.rs-header-login-modal
+		width: 45%
+		margin-left: -22.5%
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+	header
+		&.rs-header181
+			.rs-as
+				//font-size: $btn_large_txt_size_L
+				//line-height: $btn_large_lineHeight_L
+				padding: $btn_large_padding_L
+				margin-top: 2rem
+			.rs-as-label
+				width: 15rem
+			.rs-as-drop
+				font-size: $header_font_size_large
+				line-height: $header_font_size_large+$txt_lineHeight_diff
+				li
+					font-size: $header_font_size_large
+					line-height: $header_font_size_large+$txt_lineHeight_diff
+	.rs-header-login-modal
+		width: 30% !important
+		margin-left: -15% !important
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}

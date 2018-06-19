@@ -1,0 +1,1281 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//central location for the variables defining all settings of the theme  (Fundation Zurb alike)
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Table of Content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//A. General Settings/////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//X. colors
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$color_c1: #333333 // global body text color
+$color_c2: #ffffff
+
+//Inception colors
+$color_pp1: #5C2D91
+$color_pp2: #00BCEE
+
+$color_ps1: #9C5FB5
+$color_ps2: #C1C1C3
+$color_ps3: #0073CF
+$color_ps4: #66D2CC
+
+//NEW INCEPTION 2 COLORS
+$color_blue: #00BCEE
+$color_dark_blue: #0073CF
+$color_turquoise: #66D2CC
+$color_green: #81C747
+$color_yellow: #FFCA00
+$color_orange: #F39200
+$color_red: #EE2E5D
+$color_magenta: #FF418C
+$color_grey: #C1C1C3
+$color_almond: #EAC883
+
+//--------
+$color_pt1: #EBE5F2
+$color_pt2: #C2CBE0 //#CCCCCC
+$color_pt3: #7E8597 //#636363
+$color_pt4: #CCF2FC
+$color_pt5: #DED5E9
+$color_pt6:	#CEC0DE
+$color_pt7: #E5F8FD
+
+$color_pt8: #E5E5E5
+$color_pt9: #B2EBFA
+$color_pt10: #F1F3F8
+$color_pt11: #F3F3F3
+
+$color_p1: $color_pt1
+$color_p2: #F5F3F9
+
+$color_link: $color_dark_blue
+
+$color_promo: #EE2E5D
+$color_promo_hover: #F16375	// light pink for hover promo button
+$color_error: #EE0707
+$color_error_light: #FDE6E6
+$color_success: $color_green
+$color_success_light: #EBFAF2
+$color_lowqty: #F58221   			//other color: basket (sport) + warning low qty
+
+$color_orange_ext_light: #ffeae0		//external light color for Orange
+$color_voo_light: #FDECF5			//external light color for Voo
+$color_telenet_light: #FFF9D5		//external light color for Telenet
+$color_orange_ext: #f50					//external color Orange
+$color_voo: #DA2B8D					//external color for Voo
+$color_telenet: #FFC300				//external color for Telenet
+$color_base: #465e1e				//external color for Base
+$color_base_light: #e9ebe4			//external light color for Base
+$color_LinkedIn: #007BB6			//external color for LinkedIn
+$color_facebook: #3b5998			//external light color for Facebook
+$color_twitter: #55acee				//external light color for twitter
+$color_youtube: #cd201f				//external light color for Youtube
+
+
+//X. gradients
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//Header gradient
+$gradient_g1_start: $color_pp1 		//gradient Start Color
+$gradient_g1_mid: #494AA4 			// gradient Mid color
+$gradient_g1_end: $color_pp2 		//gradient end color
+
+//NEW GRADIENT WITH SECONDARY COLORS
+$gradient_s5: $color_magenta
+$gradient_s6: $color_yellow
+$gradient_s7: $color_green
+$gradient_s8: $color_red
+$gradient_s9: $color_orange
+$gradient_s10: $color_turquoise
+
+
+//X. opacity
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+//X. radius
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$radius: 0.4rem
+$radius_small: 5px
+
+
+
+
+//X. Fonts
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$font_PxReg: ProximusRegular,Verdana,Helvetica,sans-serif
+$font_PxBold: ProximusBold,Verdana,Helvetica,sans-serif
+$font_PxLight: ProximusLight,Verdana,Helvetica,sans-serif  //added by GM 21/02/17
+//$font_PxDisp: ProximusDispRegular,Verdana,Helvetica,sans-serif		//not used
+$font_pxXBold: ProximusExtraBold,Verdana,Helvetica,sans-serif
+
+
+
+
+//X. texts
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+$txt_size_S: 1.3rem
+$txt_size_M: 1.4rem
+$txt_size_L: 1.6rem
+
+$txt_lineHeight_diff: 0.6rem
+$txt_lineHeight_S: $txt_size_S+$txt_lineHeight_diff
+$txt_lineHeight_M: $txt_size_M+$txt_lineHeight_diff
+$txt_lineHeight_L: $txt_size_L+$txt_lineHeight_diff
+
+
+$txt_sizes_S: (1,1.1,1.2,1.3,1.4,1.6,2,2.2,2.4,2.6,3,3.4,3.8)
+$txt_sizes_M: (1,1.1,1.3,1.4,1.6,1.8,2.2,2.5,2.7,2.8,3.2,4,4.4)
+$txt_sizes_L: (1,1.2,1.4,1.6,1.8,2.0,2.6,3,3.6,4,5,6,7)
+$txt_sizes_names: (1,2,3,4,5,6,7,8,9,10,11,12,13)
+
+$txt_sup_fontSize_S: 1rem
+$txt_sup_fontSize_M: 1rem
+$txt_sup_fontSize_L: 1rem
+$txt_sup_lineHeight_S: $txt_sup_fontSize_S + $txt_lineHeight_diff
+$txt_sup_lineHeight_M: $txt_sup_fontSize_M + $txt_lineHeight_diff
+$txt_sup_lineHeight_L: $txt_sup_fontSize_L + $txt_lineHeight_diff
+
+$txt_s2_s: #{nth($txt_sizes_S,2) *1rem}
+$txt_s2_lh_s: #{nth($txt_sizes_S,2) + $txt_lineHeight_diff}
+$txt_s3_s: #{nth($txt_sizes_S,3) *1rem}
+$txt_s3_lh_s: #{nth($txt_sizes_S,3) + $txt_lineHeight_diff}
+$txt_s4_s: #{nth($txt_sizes_S,4) *1rem}
+$txt_s4_lh_s: #{nth($txt_sizes_S,4) + $txt_lineHeight_diff}
+$txt_s5_s: #{nth($txt_sizes_S,5) *1rem}
+$txt_s5_lh_s: #{nth($txt_sizes_S,5) + $txt_lineHeight_diff}
+$txt_s6_s: #{nth($txt_sizes_S,6) *1rem}
+$txt_s6_lh_s: #{nth($txt_sizes_S,6) + $txt_lineHeight_diff}
+$txt_s7_s: #{nth($txt_sizes_S,7) *1rem}
+$txt_s7_lh_s: #{nth($txt_sizes_S,7) + $txt_lineHeight_diff}
+$txt_s8_s: #{nth($txt_sizes_S,8) *1rem}
+$txt_s8_lh_s: #{nth($txt_sizes_S,8) + $txt_lineHeight_diff}
+$txt_s9_s: #{nth($txt_sizes_S,9) *1rem}
+$txt_s9_lh_s: #{nth($txt_sizes_S,9) + $txt_lineHeight_diff}
+$txt_s10_s: #{nth($txt_sizes_S,10) *1rem}
+$txt_s10_lh_s: #{nth($txt_sizes_S,10) + $txt_lineHeight_diff}
+
+$txt_s2_m: #{nth($txt_sizes_M,2) *1rem}
+$txt_s2_lh_m: #{nth($txt_sizes_M,2) + $txt_lineHeight_diff}
+$txt_s3_m: #{nth($txt_sizes_M,3) *1rem}
+$txt_s3_lh_m: #{nth($txt_sizes_M,3) + $txt_lineHeight_diff}
+$txt_s4_m: #{nth($txt_sizes_M,4) *1rem}
+$txt_s4_lh_m: #{nth($txt_sizes_M,4) + $txt_lineHeight_diff}
+$txt_s5_m: #{nth($txt_sizes_M,5) *1rem}
+$txt_s5_lh_m: #{nth($txt_sizes_M,5) + $txt_lineHeight_diff}
+$txt_s6_m: #{nth($txt_sizes_M,6) *1rem}
+$txt_s6_lh_m: #{nth($txt_sizes_M,6) + $txt_lineHeight_diff}
+$txt_s7_m: #{nth($txt_sizes_M,7) *1rem}
+$txt_s7_lh_m: #{nth($txt_sizes_M,7) + $txt_lineHeight_diff}
+$txt_s8_m: #{nth($txt_sizes_M,8) *1rem}
+$txt_s8_lh_m: #{nth($txt_sizes_M,8) + $txt_lineHeight_diff}
+$txt_s9_m: #{nth($txt_sizes_M,9) *1rem}
+$txt_s9_lh_m: #{nth($txt_sizes_M,9) + $txt_lineHeight_diff}
+$txt_s10_m: #{nth($txt_sizes_M,10) *1rem}
+$txt_s10_lh_m: #{nth($txt_sizes_M,10) + $txt_lineHeight_diff}
+
+$txt_s2_l: #{nth($txt_sizes_L,2) *1rem}
+$txt_s2_lh_l: #{nth($txt_sizes_L,2) + $txt_lineHeight_diff}
+$txt_s3_l: #{nth($txt_sizes_L,3) *1rem}
+$txt_s3_lh_l: #{nth($txt_sizes_L,3) + $txt_lineHeight_diff}
+$txt_s4_l: #{nth($txt_sizes_L,4) *1rem}
+$txt_s4_lh_l: #{nth($txt_sizes_L,4) + $txt_lineHeight_diff}
+$txt_s5_l: #{nth($txt_sizes_L,5) *1rem}
+$txt_s5_lh_l: #{nth($txt_sizes_L,5) + $txt_lineHeight_diff}
+$txt_s6_l: #{nth($txt_sizes_L,6) *1rem}
+$txt_s6_lh_l: #{nth($txt_sizes_L,6) + $txt_lineHeight_diff}
+$txt_s7_l: #{nth($txt_sizes_L,7) *1rem}
+$txt_s7_lh_l: #{nth($txt_sizes_L,7) + $txt_lineHeight_diff}
+$txt_s8_l: #{nth($txt_sizes_L,8) *1rem}
+$txt_s8_lh_l: #{nth($txt_sizes_L,8) + $txt_lineHeight_diff}
+$txt_s9_l: #{nth($txt_sizes_L,9) *1rem}
+$txt_s9_lh_l: #{nth($txt_sizes_L,9) + $txt_lineHeight_diff}
+$txt_s10_l: #{nth($txt_sizes_L,10) *1rem}
+$txt_s10_lh_l: #{nth($txt_sizes_L,10) + $txt_lineHeight_diff}
+
+
+//B. Overlaps
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$overlap-size: 6rem
+$overlap-margin: 3rem
+
+
+
+//B. spacing
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$spacing1: 1rem
+$spacing2: 2rem
+$spacing3: 3rem
+$spacing4: 4rem
+$spacing5: 5rem
+$spacing6: 6rem
+
+$fe3_S: 4rem
+$fe3_M: 6rem
+$fe3_L: 8rem
+
+//Fiber
+$space_middle_hline_small: 80px
+$space_middle_hline_medium: 132px
+$space_middle_vline_small: 74px
+$space_middle_vline_medium: 126px
+$light_fiber_pos: -41px
+
+
+//B. Heights
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$height_max: 50 		//edge of 1 to 50  in max-height lists
+$height_min: 50			//edge of 1 to 50  in min-height lists
+
+//B. widths
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$width_max: 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//B. Library Elements/////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//X. Accordion
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$accordion_expandLink_color: $color_pp1
+$accordion_expandLink_font: $font_PxBold
+$accordion_expandLink_txtDecoration: none
+$accordion_expandLink_hover_txtDecoration: underline
+$accordion_expandLink_hover_color: $color_pp2
+
+
+$accordion_font_size_S: $txt_size_S
+$accordion_font_size_M: $txt_size_M
+$accordion_font_size_L: $txt_size_L
+
+$accordion_lineHeight_S: $txt_lineHeight_S
+$accordion_lineHeight_M: $txt_lineHeight_M
+$accordion_lineHeight_L: $txt_lineHeight_L
+
+$accordion_icon_size_S: $txt_size_L // changed by Laureen on 170622 $txt_lineHeight_L		//as the icon font is 4px more than font, use the line height to get 2rem
+$accordion_icon_size_M: $txt_size_L //$txt_lineHeight_L
+$accordion_icon_size_L: $txt_size_L //$txt_lineHeight_L
+
+$accordion_icon_txtSpace: 1rem				//space between Icon and text
+$accordion_bottom_spacing: $spacing2		//space after the list
+$accordion_content_spacer: $spacing2		//space between link and content
+
+$accordion_big_content_spacer: $spacing2		//space between link and content
+
+$accordion_big_font_size_S: 2rem
+$accordion_big_font_size_M: 2rem
+$accordion_big_font_size_L: 2rem
+
+$accordion_big_lineHeight_S: $accordion_big_font_size_S + $txt_lineHeight_diff
+$accordion_big_lineHeight_M: $accordion_big_font_size_M + $txt_lineHeight_diff
+$accordion_big_lineHeight_L: $accordion_big_font_size_L + $txt_lineHeight_diff
+
+
+
+
+//X. Alarm
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$alarm_spacing: 8px 0 0 5px
+$alarm_icon_color: $color_pp1
+$alarm_icon_font_size: 2em
+$alarm_icon_line-height: 1
+
+$alarm_stack_color: $color_c2
+$alarm_stack_bg_color: $color_promo
+$alarm_stack_font-size: 0.75em //1rem
+$alarm_stack_line_height: 1 //1rem
+$alarm_stack_padding: 0.2em 0.4em //3px 5px
+$alarm_stack_radius: 3px
+
+$alarm_icon_hover_color: $color_pp2
+
+
+
+
+//X. Alert
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//Reset foundation
+$alert_box_bg_color: #f9f9f9
+$alert_box_font_size: 1.4rem
+$alert_box_line_height: 1.8rem
+$alert_box_border_color: $color_pt8
+
+$alert_box_close_color: $color_pp1
+$alert_box_close_font-size: 4rem
+$alert_box_close_hover_color: $color_pp2
+$alert_box_close_focus_color: $color_pp2
+
+$alert_box_success_bg_color: $alert_box_bg_color
+$alert_box_success_border_color: $alert_box_border_color
+$alert_box_warning_bg_color: $alert_box_bg_color
+$alert_box_warning_border_color: $alert_box_border_color
+$alert_box_error_bg_color: $alert_box_bg_color
+$alert_box_error_border_color: $alert_box_border_color
+$alert_box_congrats_bg_color: $alert_box_bg_color
+
+
+
+//our rs-alert
+$alert_shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+$alert_bx_padding: $spacing2 3.4rem 0 $spacing2
+$alert_login_bg_color: $color_ps3
+$alert_login_box_padding_S: $spacing1 0 0 0
+$alert_login_box_padding_M: $spacing2 3.4rem 0 $spacing2
+
+$alert_login_btn_marginBottom_S: $spacing1
+$alert_login_btn_marginBottom_M: $spacing2
+$alert_confirm_bg_color: $color_success
+$alert_error_bg_color: $color_error
+$alert_info_bg_color: $color_pp1
+
+
+$alert_close_txt_decoration: none
+$alert_close_font_size_S: 2.5rem
+$alert_close_font_size_M: 2.5rem
+$alert_close_font_size_L: 2.5rem
+$alert_close_line_height_S: 0
+$alert_close_line_height_M: 0
+$alert_close_line_height_L: 0
+$alert_close_margin_top: -1.5rem
+$alert_close_padding: 0.9rem 0.6rem 0.4rem
+$alert_close_right: -0.5rem
+$alert_close_top: $spacing2
+$alert_close_color: $color_c2
+
+$alert_cookie_bg_color: rgba(92, 45, 145,0.9)
+$alert_cookie_box_shadow: 0 -2px 12px rgba(0, 0, 0, 0.2)
+$alert_cookie_position: relative
+$alert_cookie_zindex: 9998
+$alert_cookie_box_padding_S: $spacing1 0 0
+$alert_cookie_box_padding_M: $spacing2 3.4rem 0 $spacing2
+$alert_cookie_close_padding_S: $spacing1 0
+$alert_cookie_close_padding_M: $spacing2 0
+$alert_cookie_close_color: $color_pt3
+$alert_cookie_close_hover_color: $color_c1
+$alert_cookie_btn_marginBottom_S: $spacing1
+$alert_cookie_btn_marginBottom_M: $spacing2
+
+
+
+
+//B. Auto-Last
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$autoLast_padding_left: $spacing1
+$autoLast_padding_right: $spacing1
+
+
+
+
+//B. Bank transfer
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$bankTransfer_spacing: 0 0 2rem
+$bankTransfer_bg_color: $color_c2
+$bankTransfer_boxInterspacing: 0.2rem
+$bankTransfer_int_padding: 0.1rem
+
+
+
+
+//B. Buttons
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$btn_font: $font_PxReg
+$btn_radius: 0 0 14px
+
+$btn_txt_size_S: $txt_size_S
+$btn_txt_size_M: $txt_size_M
+$btn_txt_size_L: $txt_size_L
+
+$btn_lineHeight_S: $txt_lineHeight_S
+$btn_lineHeight_M: $txt_lineHeight_M
+$btn_lineHeight_L: $txt_lineHeight_L
+
+$btn_padding: $spacing1 $spacing2
+$btn_margin_bottom: $spacing2
+
+$btn_large_txt_size_S: $txt_size_S
+$btn_large_txt_size_M: 1.6rem
+$btn_large_txt_size_L: 1.8rem
+
+$btn_large_lineHeight_S: $btn_large_txt_size_S + $txt_lineHeight_diff
+$btn_large_lineHeight_M: $btn_large_txt_size_M + $txt_lineHeight_diff
+$btn_large_lineHeight_L: $btn_large_txt_size_L + $txt_lineHeight_diff
+
+$btn_large_padding_S: #{$spacing1} #{$spacing2}
+$btn_large_padding_M: 1.4rem #{$spacing2}
+$btn_large_padding_L: 1.4rem #{$spacing2}
+
+$btn_wide_padding_left: 0
+$btn_wide_padding_right: 0
+$btn_wide_margin_bottom: $spacing2
+
+$btn_icon_top: -0.1rem
+$btn_large_icon_top: -0.15rem
+
+$btn_bg_color: $color_pp1
+$btn_hover_bg_color: $color_pp2
+$btn_color: $color_c2
+$btn_hover_color: $color_c2   //used also fo active, focus
+$btn_txt_align: center
+$btn_txt_valign: middle
+
+$btn_order_bg_color: $color_promo
+$btn_order_hover_bg_color: $color_pp2
+$btn_active_color: $color_c2
+$btn_active_bg_color: $color_pp2
+$btn_active_hover_color: $color_c2
+$btn_active_hover_bg_color: $color_pp2
+$btn_disabled_bg_color: #f1f3f8
+$btn_disabled_color: #c2cbe0
+
+$btn_light_bg_color: $color_ps1
+$btn_light_hover_bg_color: $color_pp2
+$btn_neg_color: $color_pp1
+$btn_neg_bg_color: $color_c2
+$btn_neg_hover_color: $color_c2
+$btn_neg_bg_hover_color: $color_pp2
+
+//ghost button
+$btn_ghost_color: $color_pp1
+$btn_ghost_bg_color: none
+$btn_ghost_border: 1px solid $color_pp1
+$btn_ghost_hover_color: $color_c2
+$btn_ghost_bg_hover_color: $color_pp2
+$btn_ghost_border_hover: 1px solid $color_pp2
+
+$btn_ghost_neg_color: $color_c2
+$btn_ghost_neg_bg_color: none
+$btn_ghost_neg_border: 1px solid $color_c2
+$btn_ghost_neg_hover_color: $color_c2
+$btn_ghost_neg_bg_hover_color: $color_pp2
+$btn_ghost_neg_border_hover: 1px solid $color_pp2
+
+$btn_click_collect_color: $color_pp1
+$btn_click_collect_bg_color: none
+$btn_click_collect_border: 1px solid $color_pp1
+$btn_click_collect_hover_color: $color_c2
+$btn_click_collect_bg_hover_color: $color_pp2
+$btn_click_collect_border_hover: 1px solid $color_pp2
+
+$topbtn_txt_size_S: 1.4rem
+$topbtn_txt_size_M: 1.4rem
+$topbtn_txt_size_L: 1.4rem
+$topbtn_lineHeight_S: $topbtn_txt_size_S + $txt_lineHeight_diff
+$topbtn_lineHeight_M: $topbtn_txt_size_M + $txt_lineHeight_diff
+$topbtn_lineHeight_L: $topbtn_txt_size_L + $txt_lineHeight_diff
+$topbtn_color: $color_pt3
+$topbtn_opacity: 0.9
+$topbtn_bg_color: $color_c2
+
+
+
+
+//B. ButtonFilters
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$btnfilter_bp1: 694px		//breakpoints specific From 0 to 694 included
+$btnfilter_bp2: 766px
+$btnfilter_bp3: 910px
+$btnfilter_bp4: 1127px
+
+$btnfilter_marging: 0 0 2rem
+$btnfilter_padding: 0			//spacing around the full block
+$btnfilter_spacing: $spacing1  //spacing between buttons
+
+
+$btnfilter_font_size_bp1: 1.2rem
+$btnfilter_font_size_bp2: 1.4rem
+$btnfilter_font_size_bp3: 1.6rem
+$btnfilter_font_size_bp4: 2rem
+$btnfilter_line_height_bp1: 1.6rem
+$btnfilter_line_height_bp2: 1.8rem
+$btnfilter_line_height_bp3: 2rem
+$btnfilter_line_height_bp4: 2.4rem
+
+$btnfilter_icon_font_size: 2.6rem
+$btnfilter_icon_line_height: 3rem
+
+
+$btnfilter_btn_padding: $spacing1		//the spacing inside each button
+$btnfilter_btn_color: $color_c2
+$btnfilter_btn_bg_color: $color_pp1
+$btnfilter_btn_hover_bg_color: $color_pp2
+
+
+
+
+//B. ButtonLists
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$btnlist_font_size_S: $txt_size_S
+$btnlist_font_size_M: $txt_size_M
+$btnlist_font_size_L: $txt_size_L
+$btnlist_line_height_S: $txt_lineHeight_S
+$btnlist_line_height_M: $txt_lineHeight_M
+$btnlist_line_height_L: $txt_lineHeight_L
+
+$btnlist_margin: 0
+$btnlist_btn_spacing: $spacing1
+$btnlist_below_spacing: $spacing1
+
+
+
+//D. FORMS
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$forms_radio_font_size_S: $txt_size_S
+$forms_radio_font_size_M: $txt_size_M
+$forms_radio_font_size_L: $txt_size_L
+$forms_radio_line_height_S: $txt_lineHeight_S
+$forms_radio_line_height_M: $txt_lineHeight_M
+$forms_radio_line_height_L: $txt_lineHeight_L
+
+$forms_checkboxBig_label_font_size_L: 1.6rem
+$forms_checkboxBig_label_line_height_L: 2.4rem
+
+$forms_checkboxBig_label_font_size_M: 1.4rem
+$forms_checkboxBig_label_line_height_M: 2.4rem
+
+$forms_checkboxBig_label_font_size_S: 1.3rem
+$forms_checkboxBig_label_line_height_S: 2.4rem
+
+$forms_label_font_size_S: $txt_size_S
+$forms_label_font_size_M: $txt_size_M
+$forms_label_font_size_L: $txt_size_L
+
+$forms_bg_fields_color: #f1f3f8
+
+//D. Headings
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$h_lineHeight_diff: $txt_lineHeight_diff
+$h1_size_L: 3.4rem
+$h2_size_L: 2.8rem
+$h3_size_L: 2.6rem
+$h4_size_L: 2.4rem
+$h5_size_L: 2rem
+$h6_size_L: 1.8rem
+
+$h1_size_M: 2.6rem
+$h2_size_M: 2.4rem
+$h3_size_M: 2.2rem
+$h4_size_M: 2rem
+$h5_size_M: 1.8rem
+$h6_size_M: 1.6rem
+
+$h1_size_S: 2.4rem
+$h2_size_S: 2.1rem
+$h3_size_S: 2rem
+$h4_size_S: 1.8rem
+$h5_size_S: 1.6rem
+$h6_size_S: 1.4rem
+
+$h1sp_size_L: 4rem
+$h1sp_size_M: 2.8rem
+$h1sp_size_S: 2.6rem
+
+$h2sp_size_L: 4rem
+$h2sp_size_M: 2.8rem
+$h2sp_size_S: 2.6rem
+
+$h3sp_size_L: 2.6rem
+$h3sp_size_M: 2.2rem
+$h3sp_size_S: 2rem
+
+$heading_panel_h3header_font_size_S: 2rem
+$heading_panel_h3header_font_size_M: 2.2rem
+$heading_panel_h3header_font_size_L: 2.6rem
+$heading_panel_h3header_line_height_S: $heading_panel_h3header_font_size_S + $txt_lineHeight_diff
+
+$heading_panel_h3header_line_height_M: $heading_panel_h3header_font_size_M + $txt_lineHeight_diff
+$heading_panel_h3header_line_height_L: $heading_panel_h3header_font_size_L + $txt_lineHeight_diff
+
+$heading_panel_h3header_competitor_font_size_S: 2.6rem
+$heading_panel_h3header_competitor_font_size_M: 2.6rem
+$heading_panel_h3header_competitor_font_size_L: 2.6rem
+$heading_panel_h3header_competitor_line_height_S: $heading_panel_h3header_font_size_S + $txt_lineHeight_diff
+$heading_panel_h3header_competitor_line_height_M: $heading_panel_h3header_font_size_M + $txt_lineHeight_diff
+$heading_panel_h3header_competitor_line_height_L: $heading_panel_h3header_font_size_L + $txt_lineHeight_diff
+
+$h1_other_fontSize_S: 3.2rem
+$h1_other_fontSize_M: 3.6rem
+$h1_other_fontSize_L: 4rem
+$h2_other_fontSize_S: 2rem
+$h2_other_fontSize_M: 2.2rem
+$h2_other_fontSize_L: 2.6rem
+
+
+//D. lists
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+$lists_icon_font_size_ratio: -0.2rem  //icons are 2px smaller than text
+
+
+$lists_iconSeparator_font_size_S: 1.6rem
+$lists_iconSeparator_font_size_M: 1.8rem
+$lists_iconSeparator_font_size_L: 2rem
+$lists_iconSeparator_line_height_S: $lists_iconSeparator_font_size_S + $txt_lineHeight_diff
+$lists_iconSeparator_line_height_M: $lists_iconSeparator_font_size_S + $txt_lineHeight_diff
+$lists_iconSeparator_line_height_L: $lists_iconSeparator_font_size_S + $txt_lineHeight_diff
+
+$lists_iconright_title_font_size_S: 1.6rem
+$lists_iconright_title_font_size_M: 1.8rem
+$lists_iconright_title_font_size_L: 2rem
+$lists_iconright_title_line_height_S: $lists_iconSeparator_font_size_S + $txt_lineHeight_diff
+$lists_iconright_title_line_height_M: $lists_iconSeparator_font_size_M + $txt_lineHeight_diff
+$lists_iconright_title_line_height_L: $lists_iconSeparator_font_size_L + $txt_lineHeight_diff
+
+$footnote_font_size: 1.2rem
+$footnote_line_height: $footnote_font_size + $txt_lineHeight_diff
+
+
+
+
+//X. Price Regimes
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$price_font: $font_PxBold
+$price_fontDel: $font_PxReg
+
+$price_euro_big_L: 2.7rem
+$price_euro_big_M: 2.3rem
+$price_euro_big_S: 2rem
+
+$price_unit_big_L: 3.6rem
+$price_unit_big_M: 2.7rem
+$price_unit_big_S: 2.4rem
+
+$price_decimal_big_L: 1.8rem
+$price_decimal_big_M: 1.6rem
+$price_decimal_big_S: 1.4rem
+
+
+$price_euro_sm_L: 2.1rem
+$price_euro_sm_M: 1.7rem
+$price_euro_sm_S: 1.6rem
+
+$price_unit_sm_L: 2.6rem
+$price_unit_sm_M: 2.2rem
+$price_unit_sm_S: 2rem
+
+$price_decimal_sm_L: 1.6rem
+$price_decimal_sm_M: 1.4rem
+$price_decimal_sm_S: 1.3rem
+
+
+$price_euro_small_L: 1.8rem
+$price_euro_small_M: 1.6rem
+$price_euro_small_S: 1.4rem
+
+$price_unit_small_L: 2rem
+$price_unit_small_M: 1.8rem
+$price_unit_small_S: 1.6rem
+
+$price_decimal_small_L: 1.6rem
+$price_decimal_small_M: 1.4rem
+$price_decimal_small_S: 1.3rem
+
+$price_color_pxs: $color_pp1
+$price_color_promo: $color_promo
+$price_color_del: $color_c1
+$price_color_compare: $color_c1 //(used on prices compared to competition)
+$price_color_inverted: $color_c2
+$price_color_exceed: $color_error
+$price_color_selected: $color_pp2
+
+
+
+
+//X. range slider
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$rangeSlider_height: 1.2rem
+$rangeSlider_margin: 1rem 0
+$rangeSlider_handle_height: 2rem
+$rangeSlider_handle_width: 3rem
+$rangeSlider_activeSegment_height: 1rem
+
+
+
+//X. slider
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$slider_dots_height: 1.2rem
+$slider_dots_width: 1.2rem
+$slider_dots_radius: 50%
+
+
+
+//X. sticker
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$sticker_slider_font_size: 1.2rem
+$sticker_slider_line_height: $sticker_slider_font_size + $txt_lineHeight_diff
+
+
+
+//X. switch
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$switch_margin_bottom: 2rem
+$switch_bullet_radius_S: 2rem
+$switch_bullet_radius_M: 2rem
+$switch_bullet_radius_L: 2rem
+
+
+$switch_label_font_size_S: $switch_bullet_radius_S *0.6
+$switch_height_S: $switch_bullet_radius_S *1.4
+$switch_width_S: #{$switch_height_S*2}
+$switch_radius_S: $switch_bullet_radius_S*2
+
+$switch_label_font_size_M: $switch_bullet_radius_M *0.6
+$switch_height_M: $switch_bullet_radius_M *1.4
+$switch_width_M: #{$switch_height_M*2}
+$switch_radius_M: $switch_bullet_radius_M*2
+
+$switch_label_font_size_L: $switch_bullet_radius_L *0.6
+$switch_height_L: $switch_bullet_radius_L *1.4
+$switch_width_L: #{$switch_height_L*2}
+$switch_radius_L: $switch_bullet_radius_L*2
+
+$switch_bullet_bgColor: $color_c2
+$switch_bgColor_no: $color_pt3
+$switch_Color_no: $color_c2
+$switch_bgColor_yes: $color_success
+$switch_Color_yes: $color_c2
+
+
+
+//X. tables
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$tables_header_font_size_S: 2.6rem
+$tables_header_font_size_M: 2.6rem
+$tables_header_font_size_L: 2.6rem
+$tables_header_line_height_S: $tables_header_font_size_S+$txt_lineHeight_diff
+$tables_header_line_height_M: $tables_header_font_size_S+$txt_lineHeight_diff
+$tables_header_line_height_L: $tables_header_font_size_S+$txt_lineHeight_diff
+
+
+//X. Accordion panel
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+$accordion_title_font_size_s : 1.6rem
+$accordion_title_font_size_m : 1.8rem
+$accordion_title_font_size_l : 2rem
+
+$accordion_title_big_font_size_s : 1.8rem
+$accordion_title_big_font_size_m : 2rem
+$accordion_title_big_font_size_l : 2.4rem
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//C. Components///////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//1. cp_404
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$p404_minHeight_S: 2rem
+$p404_minHeight_M: 35rem
+//nobg in small !
+$p404_bgImg: "/dam/cdn/images/404-header.png"
+$p404_bgPosition: "center center"
+$p404_bgSize: cover
+
+
+
+
+//2. Brand Key Values
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$brandKeyValues_font_size: 2rem
+$brandKeyValues_lineHeight: $txt_lineHeight_diff
+
+$brandKeyValues_font_size_L: 2rem
+$brandKeyValues_font_size_M: 1.8rem
+$brandKeyValues_font_size_S: 1.6rem
+$brandKeyValues_lineHeight_L: $brandKeyValues_font_size_L +$txt_lineHeight_diff
+$brandKeyValues_lineHeight_M: $brandKeyValues_font_size_M +$txt_lineHeight_diff
+$brandKeyValues_lineHeight_S: $brandKeyValues_font_size_S +$txt_lineHeight_diff
+
+
+
+
+//3. BREADCRUMB
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$breadcrumb_txt_size_L: 1.2rem
+$breadcrumb_lineHeight_L: 1.4rem
+$breadcrumb_txt_size_M: 1.1rem
+$breadcrumb_lineHeight_M: 1.3rem
+
+
+
+
+//4. CALENDAR
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$calendar_month_txt_size_L: $txt_size_L
+$calendar_month_txt_size_M: $txt_size_M
+$calendar_month_txt_size_S: $txt_size_S
+$calendar_month_lineHeight_L: $txt_lineHeight_L
+$calendar_month_lineHeight_M: $txt_lineHeight_M
+$calendar_month_lineHeight_S: $txt_lineHeight_S
+
+$calendar_day_txt_size_L: $calendar_month_txt_size_L - 0.4
+$calendar_day_txt_size_M: $calendar_month_txt_size_M - 0.4
+$calendar_day_txt_size_S: $calendar_month_txt_size_S - 0.4
+$calendar_day_lineHeight_L: $txt_lineHeight_L - 0.4
+$calendar_day_lineHeight_M: $txt_lineHeight_M - 0.4
+$calendar_day_lineHeight_S: $txt_lineHeight_S - 0.4
+
+$calendar_date_txt_size_L: $calendar_month_txt_size_L + 0.4
+$calendar_date_txt_size_M: $calendar_month_txt_size_M + 0.4
+$calendar_date_txt_size_S: $calendar_month_txt_size_S + 0.4
+$calendar_date_lineHeight_L: $txt_lineHeight_L + 0.4
+$calendar_date_lineHeight_M: $txt_lineHeight_M + 0.4
+$calendar_date_lineHeight_S: $txt_lineHeight_S + 0.4
+
+
+
+
+//5. CHOSE PXS
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$chosePxs_paddingTop_S: $spacing2
+$chosePxs_paddingTop_M: $spacing6
+$chosePxs_paddingBottom_S: $spacing1
+$chosePxs_paddingBottom_M: $spacing5
+
+$chosePxs_heading_fontSize_S: 1.6rem
+$chosePxs_heading_fontSize_M: $h4_size_M
+$chosePxs_heading_fontSize_L: $h4_size_L
+$chosePxs_heading_lineHeight_S: 2rem
+$chosePxs_heading_lineHeight_M: $h4_size_M + $txt_lineHeight_diff
+$chosePxs_heading_lineHeight_L: $h4_size_L + $txt_lineHeight_diff
+
+
+
+
+//6. COLOR CHOICE
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//7. DATEPICKER
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$datepicker_bgColor: $color_c2
+
+$datepicker_fontSize_S: 1.2rem
+$datepicker_fontSize_M: 1.2rem
+$datepicker_fontSize_L: 1.2rem
+$datepicker_list_fontSize_S: 1.4rem
+$datepicker_list_fontSize_M: 1.4rem
+$datepicker_list_fontSize_L: 1.4rem
+$datepicker_colHeader_fontSize_S: 1.4rem
+$datepicker_colHeader_fontSize_M: 1.4rem
+$datepicker_colHeader_fontSize_L: 1.4rem
+
+$datepicker_cellSpacing_S: 1rem 1rem //encoded as padding
+$datepicker_cellSpacing_M: 1rem 1rem
+$datepicker_cellSpacing_L: 1rem 1rem
+
+$datepicker_days_color: $color_c1
+$datepicker_days_bgColor: $color_pt1
+$datepicker_days_hover_color: $color_c2
+$datepicker_days_hover_bgColor: $color_pp2
+
+$datepicker_we_color: $color_c1
+$datepicker_we_bgColor: $color_pt10
+$datepicker_we_hover_color: $color_c2
+$datepicker_we_hover_bgColor: $color_pp2
+
+
+$datepicker_popup_margin: $spacing1 0
+$datepicker_popup_topSpace: $spacing2
+$datepicker_popup_border_color: $color_ps2
+$datepicker_popup_border_size: 1px
+
+
+
+
+//X. hpEntryBox
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$hpEntryBox_h1_size_L: 4rem
+$hpEntryBox_h1_size_M: 2.5rem
+$hpEntryBox_h1_size_S: 3rem
+$hpEntryBox_h1_lineHeight_L: $hpEntryBox_h1_size_L +$txt_lineHeight_diff
+$hpEntryBox_h1_lineHeight_M: $hpEntryBox_h1_size_M +$txt_lineHeight_diff
+$hpEntryBox_h1_lineHeight_S: $hpEntryBox_h1_size_S +$txt_lineHeight_diff
+
+$hpEntryBox_h3_size_L: 2rem
+$hpEntryBox_h3_size_M: 1.8rem
+$hpEntryBox_h3_size_S: 1.6rem
+$hpEntryBox_h3_lineHeight_L: $hpEntryBox_h3_size_L +$txt_lineHeight_diff
+$hpEntryBox_h3_lineHeight_M: $hpEntryBox_h3_size_M +$txt_lineHeight_diff
+$hpEntryBox_h3_lineHeight_S: $hpEntryBox_h3_size_S +$txt_lineHeight_diff
+
+$hpEntryBox_cat_gradient_start: $color_c2
+$hpEntryBox_cat_gradient_stop1: 0%
+$hpEntryBox_cat_gradient_mid: $color_pt1
+$hpEntryBox_cat_gradient_stop2: 71%
+$hpEntryBox_cat_gradient_end: $color_pt6
+$hpEntryBox_cat_gradient_stop3: 100%
+
+
+
+
+//X. IVR
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$ivr_clic2action_fontSize_S: 18px
+$ivr_clic2action_fontSize_M: 18px
+$ivr_clic2action_fontSize_L: 18px
+
+
+$ivr_box_width_S: 300px
+$ivr_box_width_M: 460px
+$ivr_box_height_S: 192px
+$ivr_box_height_M: 175px
+
+
+//X. ORDERSTEPS
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$ordersteps_fontSize_S: 1.8rem
+$ordersteps_fontSize_M: 1.8rem
+$ordersteps_fontSize_L: 1.8rem
+
+$ordersteps_icon_text_size_L: 2.6rem
+$ordersteps_icon_text_size_M: 2.3rem
+$ordersteps_icon_text_size_S: 2rem
+
+//X. PEP
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+$pep_fontSize_S: 1.4rem
+$pep_fontSize_M: 1.6rem
+$pep_fontSize_L: 1.8rem
+
+
+//X. PRODUCT HEADER
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$ph_h1_fontSize_S: $h1_other_fontSize_S
+$ph_h1_fontSize_M: $h1_other_fontSize_M
+$ph_h1_fontSize_L: $h1_other_fontSize_L
+
+$ph_h2_fontSize_S: $h2_other_fontSize_S
+$ph_h2_fontSize_M: $h2_other_fontSize_M
+$ph_h2_fontSize_L: $h2_other_fontSize_L
+
+$ph_icons_li_fontSize_M: 1.2rem
+$ph_icons_li_fontSize_L: 1.4rem
+
+//X. search form
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$searchForm_input_text_size_L: 1.6rem  //#{nth($txt-sizes-L,4)}rem
+$searchForm_input_text_size_M: 1.6rem
+$searchForm_input_text_size_S: 1.6rem
+
+$searchForm_big_input_text_size_L: 2.6rem	//#{nth($txt-sizes-L,7)}rem
+$searchForm_big_input_text_size_M: 2.0rem	//#{nth($txt_sizes_L,6)}rem
+$searchForm_big_input_text_size_S: 1.8rem	//#{nth($txt_sizes_L,5)}rem
+
+$searchForm_inputPlaceholder_Color: $color_pp1
+
+
+
+
+//X. sys nav
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//S= => 905px
+//M= => 1150px
+//S= => up
+$sysnav_fontSize_S: 1.2rem
+$sysnav_fontSize_M: 1.4rem
+$sysnav_fontSize_L: 1.8rem
+
+//$sysnav_lineHeight_S:
+//$sysnav_lineHeight_M:
+$sysnav_lineHeight_L: 2.2rem
+
+
+
+
+//X. tab nav
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//S= => 905px
+//M= => 1150px
+//S= => up
+$tabnav_fontSize_S: 1.2rem
+$tabnav_fontSize_M: 1.4rem
+$tabnav_fontSize_L: 1.6rem
+
+//$tabnav_lineHeight_S:
+//$tabnav_lineHeight_M:
+$tabnav_lineHeight_L: 2rem
+
+
+
+
+//X. tiles
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$tile_h3_txt_size_L: 2.4rem
+$tile_h3_txt_size_M: 2rem
+$tile_h3_txt_size_S: 1.8rem
+
+$tile_h3_lineHeight_L: 2.8rem
+$tile_h3_lineHeight_M: 2.4rem
+$tile_h3_lineHeight_S: 2.2rem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$header_bg: $color_c2
+$header_font_size_small: 1.3rem
+$header_font_size_medium: 1.4rem
+$header_font_size_large: 1.6rem
+
+
+
+
+
+
+
+
+
+
+
+
+//X. ckSection
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$ckSection_light_tit: $color_pp1
+$ckSection_light_subTit: $color_pp2
+$ckSection_gradient_tit: $color_c2
+$ckSection_gradient_subTit: $color_c2
+$ckSection_dark_tit: $color_c2
+$ckSection_dark_subTit: $color_pp2
+
+
+
+//X. screens media queries
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$htm_size: 62.5%			//setup to reach 1rem=10px
+$htm_size_S: 3.125vw //3.125vw for 100% iPhone4 //2.66667vw for 100% iPhone6
+$htm_size_M: .97656vw
+$htm_size_L: .833333vw
+$htm_size_L200: 62.5% //calc(6.4px + 0.3vw) fixed by Laureen
+
+
+//X. breakpoints and ranges
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+$bp_px2em: 0.0625	//convertion rate (because of foundation definition of 1em=16px)
+
+$bp_small: 640 //549 	//34,3125em	//40em(640px)
+$bp_medium: 1024 //919	//57,4375//64em(1024px)
+$bp_large: 1440		//90em (1440)
+$bp_xlarge: 1920	//120em 1920
+$bp_L1200: 1200		//1200px= bp when windowsize=webwidth
+
+$range_small: (0em, ($bp_small * $bp_px2em) *1em) 											//(0px, 640px)
+$range_medium: ((($bp_small+1) * $bp_px2em)*1em, (($bp_medium) * $bp_px2em)*1em)   			//(40.063em,64em) 	//(641px, 1024px)
+$range_large: ((($bp_medium+1) * $bp_px2em)*1em, (($bp_large) * $bp_px2em)*1em)   			//(64.063em, 90em)		//(1025px, 1440px)
+$range_xlarge: ((($bp_large+1) * $bp_px2em)*1em, (($bp_xlarge) * $bp_px2em)*1em)   			//(90.063em, 120em)	//(1441px, 1920px)
+$range_xxlarge: ((($bp_xlarge+1) * $bp_px2em)*1em)   										//(120.063em)			//(1921px)
+
+
+$screen: "only screen"
+$landscape: "#{$screen} and (orientation: landscape)"
+$portrait: "#{$screen} and (orientation: portrait)"
+
+$small_up: $screen
+$small_only: "#{$screen} and (max-width:#{upper-bound($range_small)})"
+
+$medium_up: "#{$screen} and (min-width:#{lower-bound($range_medium)})"
+$medium_only: "#{$screen} and (min-width:#{lower-bound($range_medium)}) and (max-width:#{upper-bound($range_medium)})"
+$medium_down: "#{$screen} and (max-width:#{upper-bound($range_medium)})"
+
+$large_up: "#{$screen} and (min-width:#{lower-bound($range_large)})"
+$large_only: "#{$screen} and (min-width:#{lower-bound($range_large)}) and (max-width:#{upper-bound($range_large)})"
+$large_down: "#{$screen} and (max-width:#{upper-bound($range_large)})"
+
+$xlarge_up: "#{$screen} and (min-width:#{lower-bound($range_xlarge)})"
+$xlarge_only: "#{$screen} and (min-width:#{lower-bound($range_xlarge)}) and (max-width:#{upper-bound($range_xlarge)})"
+$xlarge_down: "#{$screen} and (max-width:#{upper-bound($range_xlarge)})"
+
+$xxlarge_up: "#{$screen} and (min-width:#{lower-bound($range_xxlarge)})"
+$xxlarge_only: "#{$screen} and (min-width:#{lower-bound($range_xxlarge)}) and (max-width:#{upper-bound($range_xxlarge)})"
+$xxlarge_down: "#{$screen} and (max-width:#{upper-bound($range_xxlarge)})"
+
+//specific Breakpoint at our content size
+$L1200_up: "#{$screen} and (min-width: #{(($bp_L1200+1) * $bp_px2em) *1em})"
+
+
+
+
+
+
+
+
+
+
+
+
+//C. FOOTER
+
+
+$footer_txt_size_L: 1.4rem
+$footer_txt_size_M: 1.3rem
+$footer_txt_size_S: 1.2rem
+
+$footer_LineHeight_L: $footer_txt_size_L+$txt_lineHeight_diff
+$footer_LineHeight_M: $footer_txt_size_M+$txt_lineHeight_diff
+$footer_LineHeight_S: $footer_txt_size_S+$txt_lineHeight_diff
+
+
+
+
+
+
+//F. HP Entry Boxes
+$hpEntryBox_h3_size_L: 2rem
+$hpEntryBox_h3_size_M: 1.8rem
+$hpEntryBox_h3_size_S: 1.6rem
+$hpEntryBox_h3_lineHeight_L: $hpEntryBox_h3_size_L +$txt_lineHeight_diff
+$hpEntryBox_h3_lineHeight_M: $hpEntryBox_h3_size_M +$txt_lineHeight_diff
+$hpEntryBox_h3_lineHeight_S: $hpEntryBox_h3_size_S +$txt_lineHeight_diff
+
+//G. Box-shadows
+$shadow_1: "0px 0px 2px 0px rgba(0,0,0,0.3)"
+
+$shadow_hover_1: "0 0 4px rgba(0, 0, 0, .13), 0 4px 8px rgba(0, 0, 0, .26)"
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+

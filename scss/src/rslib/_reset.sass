@@ -1,0 +1,199 @@
+//file to reset Foundation settings
+//MOBILE MENU ICON
+a.menu-icon
+	height: 3.5rem
+	margin-top: 0.5rem
+
+
+		
+//ALERT BOXES
+//transfered into page _alert.sass
+
+	
+//FORMS
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea
+	border-width: 1px
+	margin: 0 0 $spacing2
+	padding: 0.9rem
+	//-webkit-border-radius: 0.4rem
+	//border-radius: 0.4rem
+	&:hover
+		border: 1px solid $color_c1
+
+input[disabled],input[readonly],input[readonly]:focus,input[disabled]:focus,select[disabled],select[readonly],select[disabled]:focus,select[readonly]:focus
+	color: $color_c1
+input[type="text"][readonly], input[type="password"][readonly], input[type="date"][readonly], input[type="datetime"][readonly], input[type="datetime-local"][readonly], input[type="month"][readonly], input[type="week"][readonly], input[type="email"][readonly], input[type="number"][readonly], input[type="search"][readonly], input[type="tel"][readonly], input[type="time"][readonly], input[type="url"][readonly], textarea[readonly], input[readonly]:focus,select[disabled],select[readonly],select[disabled]:focus,select[readonly]:focus,input[readonly],input[disabled],input[disabled]:hover,input[disabled]:focus
+	border-color: $forms_bg_fields_color
+
+textarea
+	resize: none
+select
+	-moz-appearance: none !important
+	font-family: inherit
+	margin: 0 0 $spacing2
+	border-width: 1px
+	padding: 0.9rem 2rem 0.9rem 0.9rem
+	background: $forms_bg_fields_color url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjE1cHgiIHk9IjAiIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDEyIDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjgzNDUxO2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48dGl0bGU+YXJyb3c8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYsNC41OCw5LjkyLjMyYTEsMSwwLDAsMSwxLjQzLDBsLjM2LjM5YTEuMTYsMS4xNiwwLDAsMSwwLDEuNTVsLTQuNjIsNSwwLDAtLjM2LjM5YTEsMSwwLDAsMS0xLjQzLDBsLS4zNi0uMzksMCwwTC4zLDIuMjZBMS4xNiwxLjE2LDAsMCwxLC4zLjcxTC42NS4zMmExLDEsMCwwLDEsMS40MywwWiIvPjwvc3ZnPg==")
+	background-position: 100% center
+	background-repeat: no-repeat
+	color: $color_c1
+	&:hover
+		background: $forms_bg_fields_color url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjE1cHgiIHk9IjAiIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDEyIDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjgzNDUxO2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48dGl0bGU+YXJyb3c8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTYsNC41OCw5LjkyLjMyYTEsMSwwLDAsMSwxLjQzLDBsLjM2LjM5YTEuMTYsMS4xNiwwLDAsMSwwLDEuNTVsLTQuNjIsNSwwLDAtLjM2LjM5YTEsMSwwLDAsMS0xLjQzLDBsLS4zNi0uMzksMCwwTC4zLDIuMjZBMS4xNiwxLjE2LDAsMCwxLC4zLjcxTC42NS4zMmExLDEsMCwwLDEsMS40MywwWiIvPjwvc3ZnPg==")
+		background-position: 100% center
+		background-repeat: no-repeat
+	option
+		background-color: $color_c2
+
+
+//.row .row.collapse input
+	//border-radius: 0.4rem 0 0 0.4rem
+.error
+	select, textarea
+		margin-bottom: $spacing2
+		
+input.error, textarea.error,select.error
+	box-shadow: 0 5px 0 $color_error
+	margin-bottom: $spacing2
+small.error
+	background: none
+	color: $color_error
+	margin-top: - $spacing1
+	padding-top: 0
+	text-transform: none
+.error label, .error label.error
+	color: $color_c1
+	
+input
+	&::-webkit-input-placeholder
+		color: $color_pt3
+		font-weight: normal
+	&:-moz-placeholder
+		color: $color_pt3
+		font-weight: normal
+	&::-moz-placeholder
+		color: $color_pt3
+		font-weight: normal
+	&:-ms-input-placeholder
+		color: $color_pt3
+		font-weight: normal
+
+fieldset legend
+	color: $color_ps1
+
+input[type="number"]
+	-moz-appearance: textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+
+.prefix,.postfix
+	height: auto
+	padding: 1rem
+	//font-size: $txt_size_L
+	//line-height: $txt_size_L
+	//border-top-width:  0.2rem
+	white-space: nowrap
+	
+
+//PAGINATION
+ul.pagination
+	display: inline-block
+	margin-bottom: $spacing2
+	li 
+		a
+			text-decoration: none
+		a:hover
+			color: $color_c2
+			text-decoration: none
+	li.arrow:hover a, li.arrow a:focus
+		background: none
+	li.unavailable a:hover
+		color: $color_pt3
+	li.unavailable a i
+		visibility: hidden
+
+
+
+//TOOLTIP
+
+		
+//DROPDOWN
+.f-dropdown
+	width: auto
+	padding-bottom: 0
+	li
+		padding: 0
+		a
+			padding-right: $spacing1
+			padding-left: $spacing1
+		a:hover
+			text-decoration: none
+			color: $color_c2
+			width: 100%
+.dropdown.button
+	padding-left: $spacing1
+	padding-top: $spacing1
+	padding-bottom: $spacing1
+
+//BLOCKGRID
+
+[class*="block-grid-"]
+	margin: 0 -#{$spacing1}
+	> li
+		padding: 0 $spacing1
+	&.rs-block-grid-collapse
+		margin: 0
+		> li
+			padding-left: 0
+			padding-right: 0
+		
+//ul
+//	li
+//		ul[class*="block-grid-"]
+//			li:last-child
+//				padding: 0 1rem
+//PANELS
+.panels
+	margin: 0 0 $spacing2 0
+//PANELS SPACING
+//.panel,.reveal-modal
+//	> *:last-child:not(.rs-btn)
+//		padding-bottom: 0
+//.panel,.reveal-modal
+//	> *:first-child
+//		padding-top: 0
+//.panel .row .columns > *:first-child
+//	padding-top: 0
+.panel, .reveal-modal
+	> .rs-btn:last-child, .panel:last-child, .alert-box:last-child, img:last-child, hr:last-child, .pagination:last-child, table:last-child, .flex-video:last-child, .rs-accordion-panel:last-child
+		margin-bottom: $spacing2
+
+//IMAGE
+img
+	margin-bottom: $spacing2
+img.jsrs-bottomAlign
+	margin-bottom: 0 !important
+//SUP SUB hover
+a:hover
+	sub:hover,sup:hover
+		text-decoration: none
+		
+//FOOTER
+footer
+	a:link
+		text-decoration: none
+	a:hover
+		text-decoration: underline
+		
+figure
+	margin: 0
+	
+.move-right .inner-wrap
+	transform: none
+	-webkit-transform: none
+
+//@media  #{$small_only}
+//	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"]
+//		font-size: 1.6rem

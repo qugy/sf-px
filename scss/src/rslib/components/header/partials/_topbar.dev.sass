@@ -1,0 +1,107 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS SMALL-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+header
+	&.rs-header181
+		.rs-header-topbar
+			min-height: 4rem
+			z-index: 100
+			a
+				padding: 1rem 0
+			.rs-last
+				display: block
+			.rs-segments-list,.rs-top-list,.rs-header-extraList ul
+				>li
+					display: block //inline
+					padding: 0 2rem 0 0
+					float: left
+					position: relative
+					&:last-child
+						padding: 0
+
+			.f-dropdown
+				background-color: #fbfcfd
+				&:before
+					border-color: transparent transparent #fbfcfd transparent
+				li
+					float: none
+					padding: 0
+					&:hover
+						background: $color_pp2
+					a
+						color: $color-c1
+						padding: 1.2rem 1rem
+						&:hover
+							color: $color_c2
+						&:after
+							display: none
+
+
+			&:after
+				content: ""
+				border-bottom: 1px solid $color_pt5
+				width: 100%
+				margin-left: auto
+				margin-right: auto
+				margin-top: 0
+				margin-bottom: 0
+				max-width: 100vw
+				display: block
+
+		&.rs-header-neg
+			.rs-header-topbar
+				&:after
+					border-bottom-color: rgba($color_c2, 0.2)
+		&.rs-header-is-sticky
+			.rs-header-topbar
+				display: none
+
+// media queries zone
+//order has to be kept
+//@media #{$small_only}
+//@media #{$small_up}
+header
+	&.rs-header181
+		.rs-header-topbar
+			.f-dropdown
+				margin-top: 0
+			li
+				font-size: $header_font_size_small
+				line-height: #{$header_font_size_small + $txt_lineHeight_diff}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS MEDIUM-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$medium_only}
+
+@media #{$medium_up}
+	header
+		&.rs-header181
+			.rs-header-topbar
+				display: block
+				position: static
+				li
+					font-size: $header_font_size_medium
+					line-height: $header_font_size_medium + $txt_lineHeight_diff
+				&:after
+					max-width: calc(120rem - 2rem)
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+////////    BEGIN OF CSS LARGE-UP !!!
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+@media #{$large_only}
+
+@media #{$large_up}
+
+@media #{$xlarge_only}
+
+@media #{$xlarge_up}
+
+@media #{$xxlarge_only}
+
+@media #{$xxlarge_up}
